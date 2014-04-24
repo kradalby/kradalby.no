@@ -1,9 +1,7 @@
-Title: Pelican
+Title: Creating a blog with pelican
 Category: Python
 Tags: pelican, publishing
 Summary: Creating a blog with pelican
-
-# Creating a blog with pelican
 
 Today i was sick and i found pelican.
 
