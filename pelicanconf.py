@@ -4,6 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Kristoffer Dalby'
 SITENAME = u'kradalby.no'
+AUTHOR_EMAIL = u'kradalby@kradalby.no'
+
 
 TIMEZONE = 'Europe/Oslo'
 DEFAULT_DATE = 'fs'
@@ -19,6 +21,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+
+
 
 # Blogroll
 LINKS =  ()
@@ -39,6 +43,12 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 THEME = "/home/kradalby/git/pelican-elegant"
+PYGMENTS_RST_OPTIONS = {'classprefix': 'pgcss', 'linenos': 'table'}
+
+
+PLUGIN_PATH = '../pelican-plugins'
+PLUGINS = ['extract_toc', 'gravatar']
+
 
 # Following items are often useful when publishing
 
@@ -46,3 +56,6 @@ THEME = "/home/kradalby/git/pelican-elegant"
 GOOGLE_ANALYTICS = "UA-18856525-15"
 GITHUB_URL = "http://github.com/kradalby"
 TWITTER_USERNAME = "kradalby"
+
+
+MD_EXTENSIONS = ['toc','codehilite(css_class=highlight)', 'extra']
