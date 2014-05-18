@@ -65,3 +65,26 @@ I have been testing when the C2950 fetches a configuration and when it is not.
 It will allways fetch the configuration when it has no configuration (duhh).
 It will not save the configuration. Which is great for us, since we want it to always fetch the latest.
 It will not fetch a configuration once the switch has a startup config.
+
+
+## Firmware
+
+On 3560 series switches and other 3000 series switches, the optimal firmware is ipservices.
+
+ipservices has routing protocols, ipbase dont. ipbase still has some layer 3 functionality.
+
+
+# Interface
+
+## Make a interface L3
+
+    :::C
+    Switch> enable
+    Switch# conf t
+    Switch(config)# int G0/1
+    Switch(config-if)# no switchport
+
+You also want to activate ip routing, and set a ip on the interface.
+
+    :::C
+    Switch(config)# ip routing
