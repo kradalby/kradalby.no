@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+@import "pygments.css";
+
+@bg: #ffffff;
+
+@head-bg: #0D4B5E;
+@head-height: 65px;
+@head-color: #f1f1f1;
+
+
+@foot-bg: #167C9C;
+@foot-border: #0f0f0f;
+@foot-height: 150px;
+
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: @bg;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: @head-height;
+    background-color: @head-bg;
+
+    nav {
+        list-style: none;
+        position: fixed;
+        right: 60px;
+        top: 0;
+
+        li {
+            line-height: 61px;
+            float: left;
+            margin: 0 40px 0 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: @head-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        margin: 10px 0 0 10px;
+    }
+}
+
+/* Content */
+
+#container {
+    margin: @head-height auto -@foot-height 0;
+    width: 960px;
+    height: auto !important;
+    height: 100%;
+    padding: 0 20px 0 0;
+
+}
+
+#content-left {
+    width: 640px;
+    float: left;
+    background-color: #454545;
+    padding: 10px 10px 10px 10px;
+}
+
+#content-right {
+    width: 280px;
+    float: right;
+    background-color: #676767;
+    padding: 10px 10px 10px 10px;
+}
+
+.highlight {
+
+    pre {
+        display: block;
+        padding: 9.5px;
+        margin: 10px 0 10px;
+        font-size: 13px;
+        line-height: 20px;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        .border-radius(4px);
+        overflow: auto;
+        white-space: pre;
+        word-break: normal;
+        word-wrap: normal;
+        background-color: #fdf6e3;
+        color: #586e75;
+        font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: @foot-height;
+    border-sizing: border-box;
+    margin: 50px 0 0 0;
+    padding: 0 50px 0 0;
+    border-top: 3px solid @foot-border;
+    background-color: @foot-bg;
+    clear: both;
+    text-align: center;
+    font-size: 16px;
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+.push {
+    height: @foot-height;
+    clear: both;
+}
