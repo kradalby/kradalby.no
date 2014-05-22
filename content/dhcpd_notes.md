@@ -11,5 +11,10 @@ Simply put the following string into the dhcpd.conf file, the information will t
     set vendor-string = option vendor-class-identifier;
 
 
+### DHCP Links
+#### Codes
+https://www.iana.org/assignments/bootp-dhcp-parameters/bootp-dhcp-parameters.xhtml
 
+#### ISC DHCP options/man
+http://linux.about.com/od/commands/l/blcmdl5_dhcpopt.htm
 

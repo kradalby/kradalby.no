@@ -84,17 +84,30 @@ Now, add the nfs dir to the exports file and reload it:
 
 Edit the menu.cfg file so it is correct with the server you now have running.
 
+## Adding some tools
 
-## Adding memory test
+### Adding memory test
 The memory test is included in the github repo. If there is a newer version available do this.
 
 Download the latest precompiled binary version of [memtestpluss](http://www.memtest.org/#downiso)
 
     :::bash
+    cd tools
     wget http://www.memtest.org/download/5.01/memtest86+-5.01.bin.gz
     gzip -d memtest86+-5.01.bin.gz
     ln -s memtest86+-5.01.bin memtest86+-5.01
 
 We need to symlink or move the file to get rid of the .bin extension for some reason.
 
-Now update the Memory test in the menu.cfg file to the new version.
+Now update the Memory test in the tools.cfg file to the new version.
+
+### Adding HDT
+The hdt software is available in the github repo. If there is a newer version available do this.
+
+Download the latest com32 module from [the hdt project](http://www.hdt-project.org)
+
+    :::bash
+    cd tools
+    wget http://www.hdt-project.org/raw-attachment/wiki/hdt-0.5.0/hdt_0_5_2.c32
+
+Update the menu to the newest version in tools.cfg.
