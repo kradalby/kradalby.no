@@ -1,8 +1,6 @@
 Title: About
 Summary: About me and the purpose of this blog
 
-# About
-
 ## Me
 
 My name is Kristoffer Dalby, i was born in 1992, from Sandefjord and currently living in Trondheim.

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ SITENAME }}
+{% endblock title %}
+
+
+{% block content %}
+<div id="article-latest">
+<h1>Recent posts</h1>
+    {% for article in articles %}
+    {% if loop.index0 < 5-1 %}
+        <article>
+            <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+            <section>
+                posted in:
+                <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                <time pubdate="pubdate" datetime="">{{ article.locale_date }}</time>
+            </section>
+        </article>
+    {% endif %}    
+    {% endfor %}
+</div>
+<div id="categories"> 
+<h1>Categories</h1>
+    {% for category, articles in categories %}
+        <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a>
+    {% endfor %}
+</div>
+
+{% endblock content %}

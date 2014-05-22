@@ -1,9 +1,10 @@
-Title: Basic Wordpress HHVM Benchmark using ApacheBench
+Title: Wordpress HHVM Benchmark
 Category: HHVM
 Tags: wordpress, hhvm, apachebench, benchmark
 Summary: Basic Wordpress HHVM Benchmark using ApacheBench
 
 [TOC]
+
 
 I have a Wordpress site running for our brewing project, and i though it would be fun to see if a very basic benchmark would show any changes between two different ways of running PHP code.
 

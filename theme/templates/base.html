@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+{% block title %}{% endblock title %}
+</title>
+
+<link rel="stylesheet/css" type="text/css" href="{{ SITEURL }}/theme/css/reset.min.css"/>
+<link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/less/main.less"/>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<header>
+    <h1><a href="/">kradalby.no</a></h1>
+    <nav>
+        <li><a href="{{ SITEURL }}/CV.html">CV</a></li>
+        {% if DISPLAY_PAGES_ON_MENU %}
+            {% for p in pages %}
+                <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+        {% endif %}
+    </nav>
+</header>
+<div id="container">
+    <div id="content">
+    {% block content %}
+    {% endblock content %}
+    </div>
+    <div class="push"></div>
+</div>
+
+<footer>
+    <p>&copy;2014 Kristoffer Dalby</p>
+    <a href="http://github.com/{{ GITHUB }}"><i class="fa fa-2x fa-github"></i></a>
+    <a href="http://twitter.com/{{ TWITTER }}"><i class="fa fa-2x fa-twitter"></i></a>
+    <a href="http://www.linkedin.com/pub/kristoffer-dalby/61/599/611"><i class="fa fa-2x fa-linkedin"></i></a>
+</footer>
+
+{% if GOOGLE_ANALYTICS %}
+    {% include "include/ga.html" %}
+{% endif %}
+
+</body>
+</html>
