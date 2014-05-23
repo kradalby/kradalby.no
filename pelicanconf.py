@@ -36,7 +36,7 @@ READERS = {'html': None}
 #DEFAULT_PAGINATION = 10
 
 
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://kradalby.no/blog'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -61,3 +61,16 @@ TWITTER_USERNAME = "kradalby"
 
 
 MD_EXTENSIONS = ['toc','codehilite(css_class=highlight)', 'extra']
+
+
+# To override standard values use localconf.py!
+
+import os, sys
+
+if os.path.isfile("localconf.py"):
+    sys.path.append(os.path.join(os.path.dirname(__file__)))
+    try: 
+        exec("from localconf import *")
+    except ImportError, e:
+        print "Coult not import localconf: %s" % str(e)
+    

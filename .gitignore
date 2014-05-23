@@ -71,5 +71,6 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-# Pelican out
+# Pelican
 output/
+localconf.py
