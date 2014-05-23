@@ -1,0 +1,267 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+@import "/theme/css/pygments.css";
+
+
+
+@bg: #ffffff;
+
+@head-bg: #0D4B5E;
+@head-height: 65px;
+@head-color: #f1f1f1;
+
+@content-link-color: #000000;
+@content-header-color: #000000;
+
+@foot-bg: #0D4B5E;
+@foot-border: #000000;
+@foot-height: 150px;
+@foot-color: #f1f1f1;
+
+
+@toc-bg: #FFF8E0;
+@toc-border-color: rgba(0, 0, 0, 0.15);
+
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.column-gap(@gap) {
+    -webkit-column-gap: @gap;
+       -moz-column-gap: @gap;
+            column-gap: @gap;
+}
+
+.column-count(@count) {
+    -webkit-column-count: @count;
+       -moz-column-count: @count;
+            column-count: @count;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: @bg;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Tools */
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: @head-height;
+    background-color: @head-bg;
+
+    nav {
+        list-style: none;
+        position: fixed;
+        right: 60px;
+        top: 0;
+
+        li {
+            line-height: 61px;
+            float: left;
+            margin: 0 40px 0 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: @head-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        margin: 10px 0 0 10px;
+    }
+}
+
+/* Content */
+
+#container {
+    margin: @head-height auto -@foot-height 0;
+    width: 960px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    padding: 0 20px 0 0;
+
+}
+
+#content-left {
+    width: 640px;
+    float: left;
+    padding: 10px 10px 10px 0;
+
+}
+
+#content-right {
+    width: 280px;
+    float: right;
+    padding: 10px 10px 10px 10px;
+}
+
+#content {
+    padding: 0 0 0 10px;
+}
+
+#toc {
+    .border-radius(7px);
+    border: 1px solid @toc-border-color;
+    padding: 7px 5px 7px 0;
+    background-color: @toc-bg;
+
+    h1 {
+        font-size: 20px;
+        padding-left: 6px;
+    }
+
+    ul {
+        padding: 0 0 0 30px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #000000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+article {
+    font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
+
+    h1 {
+        font-size: 40px;
+
+        a {
+            color: @content-header-color;
+            text-decoration: none;
+        }
+    }
+
+    h2 {
+        color: #464345;
+        margin: 10px 0 0 0;
+    }
+
+    p {
+        margin: 0 0 15px 0;
+    }
+
+    &.overview {
+        h1 {
+            font-size: 20px;
+
+        }
+        
+        time {
+            float: right;
+        }
+
+        .info {
+            a {
+                color: @content-link-color;
+                text-decoration: none;
+                border-bottom: 1px dotted @content-link-color;
+            }
+        }
+    }
+    
+}
+
+
+#categories {
+    padding: 10px 0 0 0;
+    ul {
+        .column-count(3);
+        .column-gap(20px);
+    }
+
+    a {
+        color: @content-link-color;
+    }
+
+}
+
+
+
+.highlight {
+
+    pre {
+        display: block;
+        padding: 9.5px;
+        margin: 10px 0 10px;
+        font-size: 13px;
+        line-height: 20px;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        .border-radius(4px);
+        overflow: auto;
+        white-space: pre;
+        word-break: normal;
+        word-wrap: normal;
+        background-color: #fdf6e3;
+        color: #586e75;
+        font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: @foot-height;
+    border-sizing: border-box;
+    margin: 30px 0 0 0;
+    padding: 0 50px 0 0;
+    border-top: 3px solid @foot-border;
+    background-color: @foot-bg;
+    text-align: center;
+    font-size: 16px;
+
+    clear: both;
+
+    p {
+        margin-top: 10px;
+        color: @foot-color;
+    }
+    a {
+        color: @foot-color;
+    }
+}
+
+.push {
+    height: @foot-height;
+    clear: both;
+}
