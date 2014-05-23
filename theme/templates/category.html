@@ -6,17 +6,15 @@
 
 
 {% block content %}
-
-    {% for article in articles %}
-        <article>
-            <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-            <section>
-                {{ article.summary }}
-                <time pubdate="pubdate" datetime="">{{ article.locale_date }}</time>
-                <time datetime="">{{ article.locale_date }}</time>
-            </section>
-        </article>
-    {% endfor %}
-</div>
+        <h1>{{ category }}</h1>
+        {% for article in articles %}
+            <article class="overview">
+                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                <div class="info">
+                    {{ article.summary }}
+                    <time pubdate="pubdate" datetime="">{{ article.locale_date }}</time>
+                </div>
+            </article>
+        {% endfor %}
 
 {% endblock content %}

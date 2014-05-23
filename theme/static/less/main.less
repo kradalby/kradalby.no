@@ -1,16 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
 @import "/theme/css/pygments.css";
 
+
+
 @bg: #ffffff;
 
 @head-bg: #0D4B5E;
 @head-height: 65px;
 @head-color: #f1f1f1;
 
+@content-link-color: #000000;
+@content-header-color: #000000;
 
 @foot-bg: #0D4B5E;
 @foot-border: #000000;
 @foot-height: 150px;
+@foot-color: #f1f1f1;
 
 
 @toc-bg: #FFF8E0;
@@ -24,6 +29,17 @@
           border-radius: @radius;
 }
 
+.column-gap(@gap) {
+    -webkit-column-gap: @gap;
+       -moz-column-gap: @gap;
+            column-gap: @gap;
+}
+
+.column-count(@count) {
+    -webkit-column-count: @count;
+       -moz-column-count: @count;
+            column-count: @count;
+}
 
 * {
     margin: 0;
@@ -37,6 +53,18 @@ body {
     background-color: @bg;
     font-family: 'Roboto', sans-serif;
 }
+
+
+/* Tools */
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
 
 /* Header */
 
@@ -90,13 +118,18 @@ header {
 #content-left {
     width: 640px;
     float: left;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 0;
+
 }
 
 #content-right {
     width: 280px;
     float: right;
     padding: 10px 10px 10px 10px;
+}
+
+#content {
+    padding: 0 0 0 10px;
 }
 
 #toc {
@@ -127,11 +160,13 @@ header {
 }
 
 article {
+    font-family: Baskerville, Garamond, Georgia, 'DejaVu Serif', 'Times New Roman', Times, Serif;
+
     h1 {
         font-size: 40px;
 
         a {
-            color: #000000;
+            color: @content-header-color;
             text-decoration: none;
         }
     }
@@ -144,7 +179,43 @@ article {
     p {
         margin: 0 0 15px 0;
     }
+
+    &.overview {
+        h1 {
+            font-size: 20px;
+
+        }
+        
+        time {
+            float: right;
+        }
+
+        .info {
+            a {
+                color: @content-link-color;
+                text-decoration: none;
+                border-bottom: 1px dotted @content-link-color;
+            }
+        }
+    }
+    
 }
+
+
+#categories {
+    padding: 10px 0 0 0;
+    ul {
+        .column-count(3);
+        .column-gap(20px);
+    }
+
+    a {
+        color: @content-link-color;
+    }
+
+}
+
+
 
 .highlight {
 
@@ -183,6 +254,10 @@ footer {
 
     p {
         margin-top: 10px;
+        color: @foot-color;
+    }
+    a {
+        color: @foot-color;
     }
 }
 

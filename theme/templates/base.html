@@ -7,6 +7,22 @@
 <link rel="stylesheet/css" type="text/css" href="{{ SITEURL }}/theme/css/reset.min.css"/>
 <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/less/main.less"/>
 
+
+<script>
+  less = {
+    env: "development",
+    logLevel: 2,
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false,
+  };
+</script>
+
+
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -27,8 +43,8 @@
 </header>
 <div id="container">
     <div id="content">
-    {% block content %}
-    {% endblock content %}
+        {% block content %}
+        {% endblock content %}
     </div>
     <div class="push"></div>
 </div>

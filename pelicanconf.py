@@ -48,7 +48,7 @@ THEME = "./theme"
 PYGMENTS_RST_OPTIONS = {'classprefix': 'pgcss', 'linenos': 'table'}
 
 
-PLUGIN_PATH = '../pelican-plugins'
+PLUGIN_PATH = 'plugins'
 PLUGINS = ['extract_toc', 'gravatar']
 
 
