@@ -10,5 +10,5 @@ In my spear time, i play sysadmin in the System development and administration c
 I also am actively involved in a number of LAN-parties. I am currently the leader of dfekt LAN in Sandefjord and volunteering at The Gathering in Hamar.
 
 ## The blog
-My main intention of this blog is to use a post as documentation of my little projects, documentation is something i am not really into, and i though that this approach may help, since most of my knowledge is based on blogposts from people who do the same.
+My main intention of this blog is to use the posts as documentation for my projects, documentation is something i am not really into, and i though that this approach may help, since most of my knowledge is based on blogposts from people who do the same.
 
