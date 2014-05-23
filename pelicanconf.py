@@ -55,9 +55,9 @@ PLUGINS = ['extract_toc', 'gravatar']
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
-GOOGLE_ANALYTICS = "UA-18856525-15"
-GITHUB_URL = "http://github.com/kradalby"
-TWITTER_USERNAME = "kradalby"
+GOOGLE_ANALYTICS = u"UA-18856525-15"
+GITHUB = u"kradalby"
+TWITTER = u"kradalby"
 
 
 MD_EXTENSIONS = ['toc','codehilite(css_class=highlight)', 'extra']
