@@ -1,5 +1,4 @@
 Title: Creating a blog with pelican
-Category: Python
 Tags: pelican, publishing
 Summary: Creating a blog with pelican
 

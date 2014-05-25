@@ -1,5 +1,4 @@
 Title: Wordpress HHVM Benchmark
-Category: HHVM
 Tags: wordpress, hhvm, apachebench, benchmark
 Summary: Basic Wordpress HHVM Benchmark using ApacheBench
 

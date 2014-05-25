@@ -1,5 +1,4 @@
 Title: Using Nginx to serve bootstrap script
-Category: Nginx
 Tags: nginx, bootstrapping, debian, lazy
 Summary: Using Nginx to serve bootstrap script
 

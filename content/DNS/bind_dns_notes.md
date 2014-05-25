@@ -1,5 +1,4 @@
 Title: Notes about BIND9
-Category: DNS
 Tags: network, networking, dns, dhcp, bind
 Summary: Notes for BIND9 setup.
 

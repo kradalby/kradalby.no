@@ -1,5 +1,4 @@
 Title: Testing nftables with Raspberry Pi and Arch
-Category: Raspberry Pi
 Tags: raspberry pi, nftables, arch linux
 Summary: Testing the new linux packet filter, nftables on a Raspberry Pi and Arch.
 

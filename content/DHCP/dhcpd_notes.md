@@ -1,5 +1,4 @@
 Title: Notes about ISC DHCPD
-Category: DHCP
 Tags: network, networking, dhcp
 Summary: These are my notes for ISC DHCPD, some tricks and stuff
 

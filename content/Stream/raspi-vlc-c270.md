@@ -1,5 +1,4 @@
 Title: Streaming video with Raspi, VLC and Logitech C270
-Category: Raspberry Pi
 Tags: raspberry pi, vlc, logitech, c270
 Summary: Streaming video with Raspi, VLC and Logitech C270
 

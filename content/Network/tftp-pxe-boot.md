@@ -1,5 +1,4 @@
 Title: PXE boot server
-Category: Network
 Tags: pxe, tftp, tftpd, boot, server
 Summary: Setup instruction for a Debian netbootserver. This are the instruction for the TFTP part.
 

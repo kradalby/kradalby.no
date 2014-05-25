@@ -1,5 +1,4 @@
 Title: Cu Serial Console
-Category: Network
 Tags: serial, console, network
 Summary: Cu as a serial console program.
 

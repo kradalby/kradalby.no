@@ -1,5 +1,4 @@
 Title: Hotkeys i use, but still seems to forget
-Category: Hotkeys
 Tags: Hotkeys
 Summary: Hotkeys i use but still seems to forget
 
