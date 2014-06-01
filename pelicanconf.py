@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+
 from __future__ import unicode_literals
+
 
 AUTHOR = u'Kristoffer Dalby'
 SITENAME = u'kradalby.no'
@@ -49,7 +51,7 @@ PYGMENTS_RST_OPTIONS = {'classprefix': 'pgcss', 'linenos': 'table'}
 
 
 PLUGIN_PATH = 'plugins'
-PLUGINS = ['extract_toc', 'gravatar']
+PLUGINS = ['extract_toc', 'gravatar', 'render_math']
 
 
 # Following items are often useful when publishing
@@ -64,6 +66,7 @@ MD_EXTENSIONS = ['toc','codehilite(css_class=highlight)', 'extra']
 
 
 # To override standard values use localconf.py!
+
 
 import os, sys
 
