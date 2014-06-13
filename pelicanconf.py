@@ -38,7 +38,7 @@ READERS = {'html': None}
 #DEFAULT_PAGINATION = 10
 
 
-SITEURL = 'https://kradalby.no/blog'
+SITEURL = 'https://kradalby.no'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'

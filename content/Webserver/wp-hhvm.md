@@ -130,3 +130,4 @@ I will also let the test site run HHVM from now on, i will not, at first, tweak 
 An other interesting observation from my side is that the site actually feels snappier. This may only be in my head.
 
 
+
