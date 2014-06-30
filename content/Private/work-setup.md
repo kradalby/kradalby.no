@@ -14,7 +14,7 @@ save_as: private/work-setup.html
     Hostname: kontor1
     Username: kavik
     IP: 192.168.1.101
-    MAC: 
+    MAC: 84:2B:2B:AC:BA:D2
     Language: Norwegian
 
 ### Anders Computer
@@ -56,11 +56,43 @@ Get it [here](http://www.bullzip.com/products/pdf/download.php).
 ### Tupo
 Get it from Dropbox or Snorlax.
 
+Copy acucorp to C:\
+
+Copy shortcut to Desktop 
+
+Install Fonts
+
+### TWSDATA and DAS
+To be able to send files to Tupperware Nordic, and to do web order stuff, we need twsdata and DAS, get them from Dropbox.
+
+#### TWSDATA
+Copy folder to the root of the C Drive.
+Start the sbsdatac application, it will give a user not set error. 
+Click ok, and go to parameters, check settings and click ok.
+
+#### DAS
+To install, go into DAS folder and web communicator. From there make a shortcut from WebCommunicatorReader to the desktop.
+
+Open it, and click on configure.
+Username: Kristine-Breiland.Dalby
+Password: Atomic
+
+Make sure that the drive letter for every folder is correct and is on the network drive.
+Also make sure that the distributor number is correct: 2045.
+
+
 ### Java
 Get it [here](http://java.com/en/download/manual.jsp).
 
 ### Flash
 Get it [here](http://get.adobe.com/flashplayer/otherversions/).
+
+### Internet Explorer
+Homepages:
+    
+    :::
+    https://www.google.no/
+    http://81.7.144.10/login.aspx?
 
 ## Printers
 
@@ -81,8 +113,9 @@ Printer setup on both machines has one color and one black/white.
 
 ## Remote control
 
-### Log Me In
-Get it [here]().
+### LogMeIn
+Since it is Tupperware Nordic that uses LogMeIn, we need them to send a install link.
+Contact Olga: OlgaPalashina@tupperware.com
 
 ### VNC
 Get it [here](http://www.tightvnc.com/download.php).

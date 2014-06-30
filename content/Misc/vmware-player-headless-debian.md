@@ -2,17 +2,90 @@ Title: Setup Vmware player headless on Debian
 Tags: vm, vmware, debian, headless, virtualization
 Summary: Guide on how to install and use Vmware player on a Debian server without X server.
 
-download player
+
+## Download
+Vmware player cannot be downloaded directly, so you will need to navigate to the following urls.
+
+Download Player:
+
 https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0|PLAYER-602|product_downloads
 
-download vix
+Download VIX:
 https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0|PLAYER-602|drivers_tools
 
-Activate VNC on vm
-http://xmodulo.com/2013/05/how-to-enable-vnc-remote-console-in-vmware-player.html
+VIX is the commandline tools we need to stop and start the VMs.
 
-Start/stop vm from commandline
-http://xmodulo.com/2012/10/how-to-launch-vmware-player-vms-without-gui.html
+## Install
+To install just execute the downloaded files:
 
-Arch
+    :::bash
+    sh VMware.bundle --eulas-agreed
+    sh VMware-vix.bundle --eulas-agreed
+
+### Packages
+We need some packages for VMware Player to run:
+
+    :::bash
+    apt-get install libxt6 libxtst6 libxcursor-dev libxinerama-dev build-essential
+
+
+### Build modules
+If your linux computer uses a kernel older than 3.13 you can just build the needed modules.
+
+    :::bash 
+    vmware-modconfig --console --install-all
+
+If you are on a later kernel, look at the patch section.
+
+### Add user
+As i will run my VMs on a server, i want a spesific user for running them:
+
+    :::bash
+    useradd -b /home/vmware -d /home/vmware -m -s /bin/bash vmware
+    passwd vmware
+
+## Configuration
+
+### Activate VNC
+To activate VNC add/edit the following:
+    
+    :::bash
+    RemoteDisplay.vnc.enabled = "TRUE"
+    RemoteDisplay.vnc.port = "5950"
+    RemoteDisplay.vnc.password = "your_password"
+
+For the password, you can use a hash, but i do not know what kind it is.
+
+
+## Usage
+
+Start:
+    
+    :::bash
+    vmrun -T player start /path/to/vm/my.vmx nogui
+
+Reboot:
+    
+    :::bash
+    vmrun -T player reset /path/to/vm/my.vmx soft
+
+Stop:
+    
+    :::bash
+    vmrun -T player stop /path/to/vm/my.vmx soft
+
+Clone: 
+Clone is actually not supported by VMware Player.
+
+    :::bash
+
+
+## Patch
+If you are using 3.15 kernel (as i am) follow this url to patch the module source.
+http://oldpapyrus.wordpress.com/2014/05/28/vmware-player-6-0-2-ubuntu-14-04-kernel-3-15-0-rc7/
+
+
+## Resources
+Arch Wiki
+
 https://wiki.archlinux.org/index.php/VMware
