@@ -14,12 +14,28 @@ My prefered way to get access:
 
     create/drop commands
 
+
+**Connect to a database**
+
+    :::bash
+    \c databasename
+
 ## Information 
 
 **List attributes and settings for table**
 
     :::bash
     \d+ tablename
+
+**List databases**
+
+    :::bash
+    \list
+
+**List tables**
+
+    :::bash
+    \dt
 
 
 ## Create and Drop
