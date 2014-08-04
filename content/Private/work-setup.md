@@ -109,6 +109,12 @@ Installing the driver must be done from the extracted directory.
 
 Printer setup on both machines has one color and one black/white.
 
+#### Mac
+To get this printer working on OS X Mavericks:
+
+http://software.canon-europe.com/software/0044814.asp
+
+When you have installed the software, you need to add the printer by going to IP and select Line Printer Daemon (LPD) as the protocol. Then select the correct software and it should be good.
 
 
 ## Remote control
