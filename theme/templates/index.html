@@ -6,8 +6,23 @@
 
 
 {% block content %}
-    <div id="article-latest">
-    <h1>Recent posts</h1>
+    <div id="blog-latest">
+    <h1>Blog</h1>
+        {% for article in categories.blog %}
+        {% if loop.index0 < 5 %}
+            <article class="overview">
+                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                <div class="info">
+                    posted in:
+                    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                    <time pubdate="pubdate" datetime="">{{ article.locale_date }}</time>
+                </div>
+            </article>
+        {% endif %}    
+        {% endfor %}
+    </div>
+    <div id="page-latest">
+    <h1>Recent updates</h1>
         {% for article in articles %}
         {% if loop.index0 < 5 %}
             <article class="overview">
@@ -21,6 +36,7 @@
         {% endif %}    
         {% endfor %}
     </div>
+    
     <div id="categories"> 
     <h1>Categories</h1>
         <ul>
