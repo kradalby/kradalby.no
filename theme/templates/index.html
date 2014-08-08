@@ -33,7 +33,7 @@
     <h1>Pages</h1>
         <ul>
             {% for article in articles %}
-                <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article }}</a></li>
+                <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.name }}</a></li>
             {% endfor %}
         </ul>
     </div>
