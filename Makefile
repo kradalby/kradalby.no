@@ -54,7 +54,7 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
-	git commit -am 'latest page build $(date +%d-%m-%Y)'
+	git commit -am 'latest page build'
 	git push origin master
 
 clean:
