@@ -54,6 +54,7 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	git add .
 	git commit -am 'latest page build'
 	git push origin master
 
