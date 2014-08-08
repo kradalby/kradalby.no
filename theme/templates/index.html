@@ -51,7 +51,7 @@
     <div id="pages">
     <h1>Pages</h1>
         <ul>
-            {% for article in articles|sort(attribute='title') %}
+            {% for article in articles|sort(attribute='title') if article.category != "blog" %}
                 <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
             {% endfor %}
         </ul>
