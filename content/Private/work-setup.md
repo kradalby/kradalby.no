@@ -116,6 +116,7 @@ http://software.canon-europe.com/software/0044814.asp
 
 When you have installed the software, you need to add the printer by going to IP and select Line Printer Daemon (LPD) as the protocol. Then select the correct software and it should be good.
 
+Apple discussion: https://discussions.apple.com/message/23658255
 
 ## Remote control
 
