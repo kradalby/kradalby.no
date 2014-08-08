@@ -32,7 +32,7 @@
     <div id="pages">
     <h1>Pages</h1>
         <ul>
-            {% for article in articles %}
+            {% for article in articles|sort(attribute='title') %}
                 <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
             {% endfor %}
         </ul>
