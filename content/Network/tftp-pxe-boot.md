@@ -58,7 +58,7 @@ Download and mount Ubuntu iso:
     :::bash
     wget http://releases.ubuntu.com/14.04/ubuntu-14.04-desktop-i386.iso
     mkdir /tmp/ubuntu
-    mount -o loop ubuntu-14.04-desktop-i386.iso /media/ubuntu
+    mount -o loop ubuntu-14.04-desktop-i386.iso /tmp/ubuntu
 
 Create folders in the TFTP directory:
 
@@ -74,12 +74,12 @@ Copy files from the iso to the appropriate:
 
     :::bash
     # NFS
-    cp -av /media/ubuntu/* /srv/nfs/ubuntu-live/i386
-    cp -av /media/ubuntu/.disk /srv/nfs/ubuntu-live/i386
+    cp -av /tmp/ubuntu/* /srv/nfs/ubuntu-live/i386
+    cp -av /tmp/ubuntu/.disk /srv/nfs/ubuntu-live/i386
 
     # TFTP
-    cp -av /media/ubuntu/casper/initrd.lz /srv/tftp/ubuntu-live-boot/14.04/i386/
-    cp -av /media/ubuntu/casper/vmlinuz /srv/tftp/ubuntu-live-boot/14.04/i386/
+    cp -av /tmp/ubuntu/casper/initrd.lz /srv/tftp/ubuntu-live-boot/14.04/i386/
+    cp -av /tmp/ubuntu/casper/vmlinuz /srv/tftp/ubuntu-live-boot/14.04/i386/
 
 Now, add the nfs dir to the exports file and reload it:
 
