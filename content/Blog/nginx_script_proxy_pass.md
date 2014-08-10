@@ -24,11 +24,12 @@ To use the script on a machine you will need curl or wget:
 curl:
 
     :::bash
-    curl -k https://kradalby.no/bs.sh | bash
-
-The k option tells curl to skip the certificate, as i had some problems with this. Bash is piped at the end to run the script from stdout.
+    curl https://kradalby.no/bs.sh | bash
 
 We can do the same with wget:
 
     :::bash
-    wget --no-check-certificate https://kradalby.no/bs.sh -O - | bash
+    wget https://kradalby.no/bs.sh -O - | bash
+
+You can add the -k option in curl and --no-check-certificate in wget to skip certificate check. If you use selfsigned certs, this will be needed.
+
