@@ -6,7 +6,13 @@ Summary: Setup instruction for a Debian netbootserver. This are the instruction 
 
 ## Installing TFTP
 
-This is empty for now.
+Install the tftpd-hpa package to get a tftp server.
+
+    :::bash
+    apt-get install tftpd-hpa
+
+The default settings shoud work fine in 99% of the relevant cases. But you may want to limit the interface to only run on the local interface.
+This can be changed in /etc/default/tftpd-hpa
 
 ## Get menu config from github
 I have a ready server config with the needed pxe packages, a splash, and menus on github.
@@ -51,7 +57,7 @@ Download and mount Ubuntu iso:
     
     :::bash
     wget http://releases.ubuntu.com/14.04/ubuntu-14.04-desktop-i386.iso
-    mkdir /media/ubuntu
+    mkdir /tmp/ubuntu
     mount -o loop ubuntu-14.04-desktop-i386.iso /media/ubuntu
 
 Create folders in the TFTP directory:
