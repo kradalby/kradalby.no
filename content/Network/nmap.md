@@ -21,3 +21,9 @@ Try to find out what OS a host is running.
 
     :::bash
     nmap -O 192.168.1.1
+
+## Scan for udp servies
+This needs root privileges.
+
+    :::bash
+    nmap 192.168.1.1 -sU

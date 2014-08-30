@@ -67,7 +67,7 @@ Then we need to create a vhost for every domain you want mailinglist for. I have
 
         rewrite ^/$ http://lists.klatrerosen.no/sympa/ permanent;           
 
-        location ^~ /static/ {
+        location /static-sympa {
             alias /var/lib/sympa/static_content/;
             access_log off;
         }
@@ -90,3 +90,32 @@ Then we need to create a vhost for every domain you want mailinglist for. I have
     }
 
 Now restart Nginx and you should be good to go.
+
+
+## Configuring virtual hosts
+When creating a sympa vhost we need a couple of files and directories:
+
+    :::
+    /etc/sympa/my.domain.tld/robot.conf
+    /var/lib/sympa/list_data/my.domain.tld/
+    /etc/nginx/conf.d/sympa_vhost.conf
+
+The vhost configuration information can be found in the Nginx part.
+
+### robot.conf
+Is the file that sympa itself uses to define a vhost. It holds information about listmaster, who can create list, where the webinterface is located and the name. It has to be located in the sympa configration directory within a folder that is named after the domain it will cover.
+
+Example:
+
+    :::
+
+### Sympa list_data directory for domain
+Sympa also needs a place to save list data. This will be in /var/lib/sympa/list_data/ in a folder named after the domain. To create:
+    
+    :::bash
+    mkdir /var/lib/sympa/list_data/my.domain.tld
+    chown -R sympa:sympa /var/lib/sympa/list_data
+
+
+
+
