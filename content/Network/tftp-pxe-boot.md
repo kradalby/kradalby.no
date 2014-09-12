@@ -14,6 +14,8 @@ Install the tftpd-hpa package to get a tftp server.
 The default settings shoud work fine in 99% of the relevant cases. But you may want to limit the interface to only run on the local interface.
 This can be changed in /etc/default/tftpd-hpa
 
+If you want to be able to upload files to the TFTP server you will need to add --create to the TFTP_OPTIONS in /etc/default/tftpd-hpa. -v can be added for more verbosity.
+
 ## Get menu config from github
 I have a ready server config with the needed pxe packages, a splash, and menus on github.
 

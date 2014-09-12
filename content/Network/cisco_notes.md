@@ -52,6 +52,83 @@ To erase
     Switch# write erase
     Switch# reload
 
+## Set enable password
+
+    :::C
+    Switch> en
+    Switch# conf t
+    Switch(config)# enable password derp
+    Switch(config)# end
+
+## Copy firmware to device
+
+### Set boot firmware
+
+THERE IS A FAULT IN THIS INSTRUCTION!
+
+    :::C
+    Switch> en
+    Switch# conf t
+    Switch# boot system path:to:firmware.bin 
+
+
+## Enable remote login
+
+### Telnet 
+
+!Not recommended!
+
+    :::C
+    Switch> en
+    Switch# conf t
+    Switch(config)#line vty 0 4
+    Switch(config-line)#login
+    % Login disabled on line 1, until 'password' is set
+    % Login disabled on line 2, until 'password' is set
+    % Login disabled on line 3, until 'password' is set
+    % Login disabled on line 4, until 'password' is set
+    % Login disabled on line 5, until 'password' is set
+    Switch(config-line)#password derp 
+
+### SSH
+
+If supported.
+
+Setup a user account:
+    
+    :::C
+    Switch> en
+    Switch# conf t
+    Switch(config)# aaa new-model
+    Switch(config)# username kradalby password 0 derp 
+
+Note: The password is clear text in the config.
+
+Enable remote management:
+
+    :::C
+    Switch(config)# line vty 0 4
+    Switch(config)# transport input SSH
+
+Enable SSH:
+
+    :::C
+    Switch(config)# ip domain-name fap.no
+    Switch(config)# crypto key generate rsa
+
+    The name for the keys will be: Switch.fap.no
+    Choose the size of the key modulus in the range of 360 to 2048 for your
+      General Purpose Keys. Choosing a key modulus greater than 512 may take
+      a few minutes.
+
+    How many bits in the modulus [512]: 2048
+    % Generating 2048 bit RSA keys ...[OK]
+
+    Switch(config)#ip ssh time-out 60
+    Switch(config)#ip ssh authentication-retries 3
+
+Note: ssh on your linux and mac computer will not by default let you connect to a server with a key smaller than 768.
+
 ## DHCP autoconfiguration
 
 Most Cisco switches, to my knowledge, can be autoconfigured with a combination of dhcp and tftp. This is a great feature.
