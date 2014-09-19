@@ -164,3 +164,68 @@ You also want to activate ip routing, and set a ip on the interface.
 
     :::C
     Switch(config)# ip routing
+    
+
+
+## SNMP
+To activate a read only public community execute the following commands in configuration mode:
+
+    :::
+    snmp-server community public RO
+    snmp-server location Lake Travis (Austin) Dial POP
+    snmp-server contact net-admin@aurora.the.net
+
+Note: Change the location and contact to the correct information.
+If using observium, use very accurate location to get map functionality to work.
+
+## Creating VLANs and assigning ports
+
+To create a VLAN on a C3560G enter configure mode and execute:
+
+    :::
+    Switch# configure terminal
+    Switch(config)# vlan 20
+    Switch(config-vlan)# name test20
+    Switch(config-vlan)# end
+
+To assign a port or portrange to the newly created VLAN:
+
+    :::
+    Switch# configure terminal 
+    Switch(config)# interface g0/1 
+    Switch(config-if)# switchport mode access 
+    Switch(config-if)# switchport access vlan 20
+    Switch(config-if)# end 
+
+
+## Routing LAN network to InterWebs (StudLAN 2014h)
+
+To get this working we basicly need two L3 interfaces or one L3 interface against internet and a local VLAN for the internal network.
+
+The basic idea is that one L3 interface has a given ip configuration against the ISP and that we have a ip route against its gateway.
+
+To configure the uplink:
+
+    :::
+    Switch# configure terminal 
+    Switch(config)# interface g0/1 
+    Switch(config-if)# no switchport
+    Switch(config-if)# no shutdown
+    Switch(config-if)# ip address <ip given by isp> <netmask>
+    Switch(config-if)# description Uplink
+    Switch(config-if)# end
+
+Set up routing and the route:
+
+    :::
+    Switch# configure terminal 
+    Switch(config)# ip routing
+    Switch(config)# ip route 0.0.0.0 0.0.0.0 <ip to gateway for uplink>
+
+We also need to set up a local L3 or a VLAN, depending on the network layout.
+
+ 
+
+ 
+
+
