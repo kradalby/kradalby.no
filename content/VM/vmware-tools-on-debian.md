@@ -12,7 +12,7 @@ Secondly log in as root on the guest.
 
 Mount the CD room:
     
-    ::: 
+    :::
     mount /dev/cdromm /mnt
 
 Unarchive the files: (remember to stay in your home folder so the files ends up there)
