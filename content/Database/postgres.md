@@ -75,3 +75,8 @@ Grant access for user on database with psql:
     :::bash
     GRANT ALL PRIVILEGES ON DATABASE dbname TO username;
 
+
+We can also create a database with the user as owner:
+
+    :::bash
+    createdb --owner user dbname

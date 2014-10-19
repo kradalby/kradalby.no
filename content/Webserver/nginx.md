@@ -27,3 +27,10 @@ Now that we have repositories for installing Nginx we can go ahead and do so:
     apt-get update
     apt-get install nginx
 
+
+## Running a Django app from a suburl
+If we want to run a django application from a suburl (kradalby.no/someapp) we need to make the app aware of that path when we send the url to it.
+If we use a proxy to send request, add this line:
+    
+    :::
+    proxy_set_header SCRIPT_NAME /myapp;
