@@ -2,7 +2,6 @@ Title: Fixing missing gpg key for apt-get
 Tags: apt-get, debian, ubuntu, linux, gpg
 Summary: Fixing missing gpg key for apt-get
 
-[TOC]
 
 Some days ago i ran into a problem where the debian repos could not find a gpg key so it could be verified. After some googling i found this handy command which fixes the problem:
 
