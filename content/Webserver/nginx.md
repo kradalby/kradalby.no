@@ -34,3 +34,30 @@ If we use a proxy to send request, add this line:
     
     :::
     proxy_set_header SCRIPT_NAME /myapp;
+
+
+## Websocket proxy
+To proxy websockets through nginx we need to pass upgrade through the Connection proxy header like this:
+
+    :::
+    location /wsapp/ {
+        proxy_pass http://wsbackend;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+
+
+## Node app proxy
+To proxy most node apps i have been using, you will need to have a subdomain for the app.
+The settings below where used to proxy strider cd.
+
+    :::
+    location / {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header HOST $http_host;
+        proxy_set_header X-NginX-Proxy true;
+
+        proxy_pass http://127.0.0.1:8002;
+        proxy_redirect off;
+    }
