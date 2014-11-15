@@ -35,7 +35,7 @@ READERS = {'html': None}
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
 
-#DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 
 SITEURL = 'https://kradalby.no'
@@ -46,7 +46,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-THEME = "./theme"
+THEME = "./theme2"
 PYGMENTS_RST_OPTIONS = {'classprefix': 'pgcss', 'linenos': 'table'}
 
 
