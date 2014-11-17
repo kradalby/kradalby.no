@@ -54,6 +54,8 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	lessc theme2/static/less/style.less output/theme/css/style.css
+	uglify output/theme/css/style.css output/theme/css/style.min.css
 	git add .
 	git commit -am 'latest page build'
 	git push origin master
