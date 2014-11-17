@@ -22,7 +22,9 @@
             </article>
         </div>
         {% if loop.last and (articles_page.has_previous() or not articles_page.has_previous() and loop.length > 1) %} 
-            {% include "include/pagination.html" %}
+            <div class="row padding">
+                {% include "include/pagination.html" %}
+            </div>
         {% endif %}
     {% endfor %}
 
