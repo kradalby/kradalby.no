@@ -6,22 +6,24 @@
 
 
 {% block content %}
-    <div class="row">
-            {% for article in articles_page.object_list if article.category == "blog" %}
-                <article class="col9 center">
-                    <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-                    <div class="info">
-                        <time pubdate="pubdate" datetimes="">{{ article.locale_date }}</time>
-                    </div>
-                    <div>
-                        {{ article.content }}
-                    </div>
-                </article>
-                {% if loop.last and (articles_page.has_previous() or not articles_page.has_previous() and loop.length > 1) %} 
-                    {% include "include/pagination.html" %}
-                {% endif %}
-            {% endfor %}
-        <h1></h1>
-    </div>
+    {% for article in articles_page.object_list if article.category == "blog" %}
+        <div class="row padding">
+            <article class="blogpost col12 padding">
+                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                <div class="padding-vertical">
+                    <time pubdate="pubdate" datetimes="">{{ article.locale_date }}</time>
+                </div>
+                <div>
+                    {{ article.content|truncate(200) }}
+                </div>
+                <div class="right">
+                <a href="{{ SITEURL }}/{{ article.url }}">Read more</a>
+                </div>
+            </article>
+        </div>
+        {% if loop.last and (articles_page.has_previous() or not articles_page.has_previous() and loop.length > 1) %} 
+            {% include "include/pagination.html" %}
+        {% endif %}
+    {% endfor %}
 
 {% endblock content %}

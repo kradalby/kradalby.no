@@ -35,7 +35,7 @@ READERS = {'html': None}
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 10
 
 
 SITEURL = 'https://kradalby.no'

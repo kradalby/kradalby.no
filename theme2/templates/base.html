@@ -1,42 +1,45 @@
 <html>
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<title>
-{% block title %}{% endblock title %}
-</title>
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
 
-<link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/less/style.less"/>
+    <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/less/style.less"/>
 
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
-
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
 </head>
 
 <body>
-<header>
-    <h1><a href="{{ SITEURL }}">kradalby.no</a></h1>
     <nav>
-        <li><a href="{{ SITEURL }}/pub/cv.html">CV</a></li>
-        {% if DISPLAY_PAGES_ON_MENU %}
-            {% for p in pages %}
-                <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-            {% endfor %}
-        {% endif %}
+        <ul>
+            <li><a href="{{ SITEURL }}/pub/cv.html">CV</a></li>
+            {% if DISPLAY_PAGES_ON_MENU %}
+                {% for p in pages %}
+                    <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+        <h1 class="right padding"><a href="{{ SITEURL }}">kradalby.no</a></h1>
     </nav>
-</header>
-<div class="container">
-    {% block content %}
-    {% endblock content %}
-</div>
-
-<footer>
-    <p>&copy; 2014 Kristoffer Dalby</p>
-    <a href="http://github.com/{{ GITHUB }}"><i class="fa fa-2x fa-github"></i></a>
-    <a href="http://twitter.com/{{ TWITTER }}"><i class="fa fa-2x fa-twitter"></i></a>
-    <a href="http://www.linkedin.com/pub/kristoffer-dalby/61/599/611"><i class="fa fa-2x fa-linkedin"></i></a>
-</footer>
+    <header>
+    </header>
+    <main>
+        <section class="container padding">
+            {% block content %}
+            {% endblock content %}
+        </section>
+    </main>
+    
+    <footer>
+        <section class="container padding center text-center">
+            <p>&copy; 2014 Kristoffer Dalby</p>
+            <a href="http://github.com/{{ GITHUB }}"><i class="fa fa-2x fa-github"></i></a>
+            <a href="http://twitter.com/{{ TWITTER }}"><i class="fa fa-2x fa-twitter"></i></a>
+            <a href="http://www.linkedin.com/pub/kristoffer-dalby/61/599/611"><i class="fa fa-2x fa-linkedin"></i></a>
+        </section>
+    </footer>
 
 {% if GOOGLE_ANALYTICS %}
     {% include "include/ga.html" %}
