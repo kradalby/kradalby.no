@@ -54,8 +54,6 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
-	rm output/theme/less/style.less
-	ln -s /home/kradalby/git/blog/theme2/static/less/style.less output/theme/less/style.less
 	git add .
 	git commit -am 'latest page build'
 	git push origin master
