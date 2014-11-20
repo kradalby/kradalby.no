@@ -49,6 +49,7 @@ To proxy websockets through nginx we need to pass upgrade through the Connection
 
 
 ## Node app proxy
+
 To proxy most node apps i have been using, you will need to have a subdomain for the app.
 The settings below where used to proxy strider cd.
 
@@ -60,4 +61,13 @@ The settings below where used to proxy strider cd.
 
         proxy_pass http://127.0.0.1:8002;
         proxy_redirect off;
+    }
+
+## Google verification
+To verify that you own a domain to google, you can simply add a return statement for the url the where the verification file would be:
+
+    :::
+    location = /googled1085b59adc211cd.html {
+            rewrite ^/(.*)  $1;
+            return 200 "google-site-verification: $uri";
     }
