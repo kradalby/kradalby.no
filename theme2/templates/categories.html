@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ SITENAME }} | Categories
+{% endblock title %}
+
+{% block content %}
+    <div class="row padding">
+        <div class="toc">
+            {% for category, articles in categories %}
+                <li>{{ category }}</li>
+            {% endfor %}
+        </div>
+        {% for category, articles in categories %}
+            <h1>{{ category }}</h1>
+            {% for article in articles %}
+                <li>{{ article }}</li>
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endblock content%}
