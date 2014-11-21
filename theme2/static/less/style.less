@@ -103,12 +103,19 @@ nav {
 
         li {
             float: left;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         
+
             a {
                 padding: 15px;
                 display: inline-block;
+                -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                box-sizing: border-box;         
 
                 &:hover {
-                    box-shadow:inset 0px 0px 4px 0px @goodfriend;
+                    border-bottom: 4px solid @goodfriend;
                 }
             }
             .active {
