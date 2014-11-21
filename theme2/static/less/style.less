@@ -103,15 +103,12 @@ nav {
 
         li {
             float: left;
-            box-sizing: border-box;
-            -moz-box-sizing:border-box;
-            -webkit-box-sizing:border-box;
             a {
                 padding: 15px;
                 display: inline-block;
 
                 &:hover {
-                    border-bottom: 4px solid @goodfriend;
+                    box-shadow:inset 0px 0px 4px 0px @goodfriend;
                 }
             }
             .active {
