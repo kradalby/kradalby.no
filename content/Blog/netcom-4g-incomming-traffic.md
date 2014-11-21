@@ -1,4 +1,6 @@
 Title: Netcom 4G incomming traffic
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: netcom, 4g, portforward
 Summary: Little wrant about Netcom 4G and stupidity.
 

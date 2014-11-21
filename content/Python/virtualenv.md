@@ -1,4 +1,6 @@
 Title: Setting up virtualenv for Python 
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: python, python3, virtualenv
 Summary: How to set up a virtualenv for python development and production.
 

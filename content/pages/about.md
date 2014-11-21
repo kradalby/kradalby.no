@@ -1,4 +1,6 @@
 Title: About
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Summary: About me and the purpose of this blog
 
 ## Me

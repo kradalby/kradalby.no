@@ -1,4 +1,6 @@
 Title: Compile latest Linux kernel for Debian
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: linux, kernel, debian, latest
 Summary: Quick collection of commands on how to compile the latest linux kernel for Debian.
 

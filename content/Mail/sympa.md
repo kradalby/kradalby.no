@@ -1,4 +1,6 @@
 Title: Sympa 
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: sympa, mail, maillist, mailinglist, debian
 Summary: How i install Sympa on Debian
 

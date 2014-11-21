@@ -1,4 +1,6 @@
 Title: Setup StartCom SSL/TLS certs correctly
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: ssl, tls, certs, startcom, startssl, nginx
 Summary: Notes to remember when creating a new certificate from StartCom
 

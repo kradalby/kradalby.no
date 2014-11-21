@@ -1,4 +1,6 @@
 Title: Wordpress HHVM Benchmark
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: wordpress, hhvm, apachebench, benchmark
 Summary: Basic Wordpress HHVM Benchmark using ApacheBench
 

@@ -1,4 +1,6 @@
 Title: Cisco Catalyst Express 500 
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: cisco, network, reset, express, crap
 Summary: How to reset a Cisco Express 500 and other stuff
 

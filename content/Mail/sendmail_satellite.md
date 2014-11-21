@@ -1,4 +1,6 @@
 Title: Use Sendmail as a satelite system
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: mail, smtp, satelite, sendmail
 Summary: Quick note on how to use Sendmail as a satelite mail system.
 

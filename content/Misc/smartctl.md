@@ -1,4 +1,6 @@
 Title: Checking S.M.A.R.T. status under Linux
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: smart, linux, harddrive, ssd
 Summary: Checking S.M.A.R.T. status under Debian Linux
 

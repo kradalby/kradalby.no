@@ -1,4 +1,6 @@
 Title: Streaming video with Raspi, VLC and Logitech C270
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: raspberry pi, vlc, logitech, c270
 Summary: Streaming video with Raspi, VLC and Logitech C270
 

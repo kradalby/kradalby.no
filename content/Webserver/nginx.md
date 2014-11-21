@@ -1,4 +1,6 @@
 Title: Installing Nginx on Debian Wheezy 
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: webserver wheezy debian nginx
 Summary: Installation guide for the latest Nginx on Debian Wheezy
 

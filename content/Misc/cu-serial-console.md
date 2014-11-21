@@ -1,4 +1,6 @@
 Title: Cu Serial Console
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: serial, console, network
 Summary: Cu as a serial console program.
 

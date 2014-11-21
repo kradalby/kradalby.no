@@ -1,4 +1,6 @@
 Title: Setup documentation for Snorlax
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: backup
 Summary: Documentation covering the setup of Snorlax.
 URL: private/snorlax-setup.html

@@ -1,4 +1,6 @@
 Title: Dig usage
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: network, networking, dns, bind
 Summary: Most of the dig commands i use.
 

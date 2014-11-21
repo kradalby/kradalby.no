@@ -1,4 +1,6 @@
 Title: Install VMware tools on Debian 
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: vmware, tools, linux, debian
 Summary: How to install VMware tools on a Debian guest.
 

@@ -1,4 +1,6 @@
 Title: Work setup
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: work
 Summary: Documentation showing work setup.
 URL: private/work-setup.html

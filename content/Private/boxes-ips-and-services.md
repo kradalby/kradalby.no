@@ -1,4 +1,6 @@
 Title: Overview over my boxes and roughly what they run.
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: servers
 Summary: Overview over my boxes and roughly what they run.
 URL: private/boxes-ips-and-services.html

@@ -1,4 +1,6 @@
 Title: Samba setup
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: samba, smb, smbd, smb2
 Summary: Description on how to setup Samba.
 

@@ -1,4 +1,6 @@
 Title: uWSGI and Nginx on Debian Wheezy
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: nginx, uwsgi, django, python, debian
 Summary: Setup instructions for uWSGI on Debian Wheezy.
 

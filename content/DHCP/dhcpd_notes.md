@@ -1,4 +1,6 @@
 Title: Notes about ISC DHCPD
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: network, networking, dhcp
 Summary: These are my notes for ISC DHCPD, some tricks and stuff
 

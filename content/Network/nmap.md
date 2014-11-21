@@ -1,4 +1,6 @@
 Title: Handy commands for nmap
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: network, networking, nmap, portscan, ipscan
 Summary: A collection of commands that are useful for network stuff with nmap.
 

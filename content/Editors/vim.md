@@ -1,4 +1,6 @@
 Title: Vim 
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: vim, editor, awesome
 Summary: Tips and tricks i use in vim
 

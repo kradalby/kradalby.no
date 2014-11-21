@@ -1,4 +1,6 @@
 Title: Setup Vmware player headless on Debian
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: vm, vmware, debian, headless, virtualization
 Summary: Guide on how to install and use Vmware player on a Debian server without X server.
 

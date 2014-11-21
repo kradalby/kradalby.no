@@ -1,4 +1,6 @@
 Title: Notes about configuring Cisco equipment
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: network, networking, cisco, switch
 Summary: My notes for configuring cisco switches and routers, at some point, this will have both basic and advance stuff.
 

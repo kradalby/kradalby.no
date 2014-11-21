@@ -1,4 +1,6 @@
 Title: Windows tools i find useful
+Date: 2014-01-01 10:00
+Modified: 2014-01-01 10:00
 Tags: Windows, tools
 Summary: Sometimes, you will have to use this horrible OS. This things might make it more pleasant and be useful
 
