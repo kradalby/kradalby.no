@@ -6,21 +6,19 @@
 
 {% block content %}
 {% if article.toc %}
-    <div id="content-right">
-        <div id="toc">
+    <div id="row">
+        <div id="toc" class="col12">
             <h1>Table of content</h1>
             {{ article.toc }}
         </div>
     </div>
 {% endif %}
-<article>
-<div id="content-left">
-<article>
-    <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-    <section>
-    {{ article.content }}
-    <section>
-</article>
+<div id="row">
+    <article class="col12">
+        <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+        <section>
+        {{ article.content }}
+        <section>
+    </article>
 </div>
-</article>
 {% endblock content%}
