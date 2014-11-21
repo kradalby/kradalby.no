@@ -8,6 +8,8 @@
     <div class="row padding">
         <article class="blogpost col12 padding">
             <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                <time pubdate="pubdate" datetimes="">{{ article.modified }}</time>
+                <time pubdate="pubdate" datetimes="">{{ article.date }}</time>
                 {% if article.toc %}
                      <div id="toc" class="col12">
                          <h1>Table of content</h1>
