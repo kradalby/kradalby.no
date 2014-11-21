@@ -17,12 +17,14 @@
                     </ul>
                 </div>
             </div>
-            {% for category, articles in categories %}
-                <h1 id="{{ loop.index }}">{{ category }}</h1>
-                {% for article in articles %}
-                    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+            <div>
+                {% for category, articles in categories %}
+                    <h2 id="{{ loop.index }}">{{ category }}</h1>
+                    {% for article in articles %}
+                        <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+                    {% endfor %}
                 {% endfor %}
-            {% endfor %}
+            </div>
         </article>
     </div>
 {% endblock content%}
