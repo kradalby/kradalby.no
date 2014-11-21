@@ -50,7 +50,7 @@ THEME = "./theme2"
 PYGMENTS_RST_OPTIONS = {'classprefix': 'pgcss', 'linenos': 'table'}
 
 
-PLUGIN_PATH = 'plugins'
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['extract_toc', 'gravatar', 'render_math']
 
 

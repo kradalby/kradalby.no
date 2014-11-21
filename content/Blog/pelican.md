@@ -1,4 +1,6 @@
 Title: Creating a blog with pelican
+Date: 2010-12-03 10:20
+Modified: 2014-12-05 19:30
 Tags: pelican, publishing
 Summary: Creating a blog with pelican
 
