@@ -17,7 +17,7 @@
             <li><a href="/categories.html">Categories</a></li>
             {% if DISPLAY_PAGES_ON_MENU %}
                 {% for p in pages %}
-                    <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                    <li><a href="/{{ p.url }}">{{ p.title }}</a></li>
                 {% endfor %}
             {% endif %}
         </ul>
