@@ -95,9 +95,11 @@ p {
 }
 
 nav {
+    @font-nav-size: 22px;
+
     background: @myhair;
     color: @pewter;
-    font-size: 22px;
+    font-size: @font-nav-size;
 
     a {
         color: @pewter;
@@ -106,6 +108,7 @@ nav {
 
     h1 {
         color: lighten(@labbra, 5%);
+        font-size: @font-nav-size;
     }
     ul {
         margin: 0;
