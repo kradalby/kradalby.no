@@ -7,19 +7,19 @@
 {% block content %}
     <div class="row padding">
         <article class="blogpost col12 padding"
-        <div class="toc">
-            <ul>
-                {% for category, articles in categories %}
-                    <li>{{ category }}</li>
+            <div class="toc">
+                <ul>
+                    {% for category, articles in categories %}
+                        <li>{{ category }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% for category, articles in categories %}
+                <h1>{{ category }}</h1>
+                {% for article in articles %}
+                    <li>{{ article.title }}</li>
                 {% endfor %}
-            </ul>
-        </div>
-        {% for category, articles in categories %}
-            <h1>{{ category }}</h1>
-            {% for article in articles %}
-                <li>{{ article.title }}</li>
             {% endfor %}
-        {% endfor %}
         </article>
     </div>
 {% endblock content%}
