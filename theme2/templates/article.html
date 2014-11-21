@@ -3,10 +3,11 @@
 {% block description %}Title: {{ article.title }}; Date: {{ article.date|strftime('%d/%m/%Y %H:%M') }}; Modified: {{ article.modified|strftime('%d/%m/%Y %H:%M') }}; Author: {{ article.author }}{% endblock %}
 
 {% block head %}
-    <meta name="tags" content="{{ article.tags }}" />
+    <meta name="tags" content="{{ article.tags|join(',')|striptags }}" />
+    <meta name="keywords" content="{{ article.tags|join(',')|striptags }}" />
     <meta name="date" content="{{ article.date|strftime('%d/%m/%Y %H:%M') }}" />
     <meta name="modified" content="{{ article.modified|strftime('%d/%m/%Y %H:%M') }}" />
-    <meta name="category" content=" {{ article.category }}" />
+    <meta name="category" content="{{ article.category }}" />
     <meta name="authors" content="{{ AUTHOR }}" />
 {% endblock %}
 
