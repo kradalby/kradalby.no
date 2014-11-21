@@ -6,12 +6,14 @@
 
 
 {% block content %}
-    <article>
-        <h1><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h1>
-        <section>
-            {{ page.content }}
-            <img src="{{ page.author_gravatar }}?s=350">
-        </section>
+    <div class="row">
+        <article>
+            <h1><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h1>
+            <section>
+                {{ page.content }}
+                <img src="{{ page.author_gravatar }}?s=350">
+            </section>
 
-    </article>
+        </article>
+    </div>
 {% endblock content %}
