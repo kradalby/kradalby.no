@@ -20,9 +20,11 @@
             <div>
                 {% for category, articles in categories %}
                     <h2 id="{{ loop.index }}">{{ category }}</h1>
+                    <ul>
                     {% for article in articles %}
                         <li><a href="{{ article.url }}">{{ article.title }}</a></li>
                     {% endfor %}
+                    </ul>
                 {% endfor %}
             </div>
         </article>
