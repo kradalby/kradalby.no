@@ -5,16 +5,14 @@
 {% endblock title %}
 
 {% block content %}
+    <div id="row padding">
+        <article class="col12 blogpost padding">
     {% if article.toc %}
-        <div id="row padding">
             <div id="toc" class="col12">
                 <h1>Table of content</h1>
                 {{ article.toc }}
             </div>
-        </div>
     {% endif %}
-    <div id="row padding">
-        <article class="col12 blogpost padding">
             <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
             <section>
                 {{ article.content }}
