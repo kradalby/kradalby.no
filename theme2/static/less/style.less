@@ -33,7 +33,6 @@ body {
 
 main {
     background: @pewter;
-
 }
 
 a {
@@ -43,17 +42,6 @@ a {
 
 a:hover {
     color: lighten(@labbra, 5%);
-}
-
-nav {
-    background: @myhair;
-    color: @pewter;
-    font-size: 22px;
-
-    a {
-        color: @pewter;
-        text-decoration: none;
-    }
 }
 
 footer {
@@ -96,7 +84,7 @@ p {
     padding: 9px;
 }
 
-article.blogpost {
+.blogpost {
     border-left: 7px solid @goodfriend;
     background: lighten(@pewter, 13%);
     margin-left: 15px;
@@ -107,6 +95,18 @@ article.blogpost {
 }
 
 nav {
+    background: @myhair;
+    color: @pewter;
+    font-size: 22px;
+
+    a {
+        color: @pewter;
+        text-decoration: none;
+    }
+
+    h1 {
+        color: lighten(@labbra, 5%);
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -129,9 +129,6 @@ nav {
                 border-bottom: 4px solid @goodfriend
             }
         }
-    }
-    h1 {
-        color: lighten(@labbra, 5%);
     }
 }
 
