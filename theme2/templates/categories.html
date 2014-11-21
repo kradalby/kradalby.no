@@ -8,7 +8,7 @@
     <div class="row padding">
         <article class="blogpost col12 padding">
             <div id="toc">
-                <h1>Table of content</h1>
+                <h1>Categories</h1>
                 <div class="toc">
                     <ul>
                         {% for category, articles in categories %}
@@ -17,7 +17,7 @@
                     </ul>
                 </div>
             </div>
-            <div>
+            <div id="post-list">
                 {% for category, articles in categories %}
                     <h2 id="{{ loop.index }}">{{ category }}</h1>
                     <ul>
