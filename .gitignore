@@ -74,3 +74,4 @@ docs/_build/
 # Pelican
 output/
 localconf.py
+cache/

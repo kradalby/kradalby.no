@@ -1,6 +1,6 @@
 Title: Setting up 6rd on my Linux router
 Date: 2014-01-01 10:00
-Modified: 2014-01-01 10:00
+Modified: 2014-11-22 10:11
 Tags: 6rd, altibox, ipv6, tunnel, debian, linux
 Summary: Setting up 6rd on my Linux router
 
