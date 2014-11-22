@@ -21,6 +21,8 @@
             <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
                 <div class="time">
                     Modified: <time pubdate="pubdate" datetimes="">{{ article.modified|strftime('%d/%m/%Y %H:%M') }}</time>
+                </div>
+                <div class="time">
                     Created:  <time pubdate="pubdate" datetimes="">{{ article.date|strftime('%d/%m/%Y %H:%M') }}</time>
                 </div>
                 {% if article.toc %}
