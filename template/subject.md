@@ -1,4 +1,6 @@
 Title: TDT 
+Date: 
+Modified: 
 Summary: My notes for TDT .
 
 [TOC]
