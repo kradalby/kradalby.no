@@ -39,6 +39,11 @@ My prefered way to get access:
     :::bash
     \dt
 
+**List users**
+
+    :::bash
+    \du
+
 
 ## Create and Drop
 
