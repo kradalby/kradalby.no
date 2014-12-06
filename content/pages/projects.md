@@ -3,7 +3,7 @@ Date: 2014-12-06 14:08
 Modified: 2014-12-06 14:08
 Summary: My projects
 
-<div class="project" markdown="1">
+<div class="project padding-vertical" markdown="1">
 
 ## kradalby.no
 I created kradalby.no to have somewhere to keep the documentation i write and to have it available in a practicle manner. I use a static site generator called pelican. The stylesheet is written using less and is compiled to minified CSS when i build the site. Pelican allows me to write all the pages/posts in Markdown, which is quite pleasant.
@@ -12,7 +12,7 @@ I created kradalby.no to have somewhere to keep the documentation i write and to
 
 * * *
 
-<div class="project" markdown="1">
+<div class="project padding-vertical" markdown="1">
 
 ## dfekt LAN website
 ![dfektlan.no](/img/dfektlan.png){: .img-responsive .img-project }
@@ -31,7 +31,7 @@ I have together with [Thor Martin](https://github.com/thormartin91) built the df
 
 * * *
 
-<div class="project" markdown="1">
+<div class="project padding-vertical" markdown="1">
 
 ## dfekt LAN Point of sales
 ![dfektlan POS](/img/dfektlanpos.png){: .img-responsive .img-project }
@@ -40,7 +40,7 @@ Together with the dfekt LAN webpage i created a Point of sales system to use in 
 
 * * *
 
-<div class="project" markdown="1">
+<div class="project padding-vertical" markdown="1">
 
 ## More projects at GitHub
 I have a lot of open repositories at [GitHub](https://github.com/kradalby) with many projects. 
@@ -58,6 +58,6 @@ Here is a list of some of them:
 
 * * *
 
-<div class="project" markdown="1">
+<div class="project padding-vertical" markdown="1">
 
 </div>
