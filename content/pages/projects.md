@@ -10,7 +10,6 @@ Summary: My projects
 I created kradalby.no to have somewhere to keep the documentation i write and to have it available in a practicle manner. I use a static site generator called pelican. The stylesheet is written using less and is compiled to minified CSS when i build the site. Pelican allows me to write all the pages/posts in Markdown, which is quite pleasant.
 
 </div>
-'
 
 <div class="project">
 
