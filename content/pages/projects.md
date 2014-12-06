@@ -15,7 +15,7 @@ I created kradalby.no to have somewhere to keep the documentation i write and to
 <div class="project" markdown="1">
 
 ## dfekt LAN website
-![dfektlan.no](/img/dfektlan.png){: .img-responsive }
+![dfektlan.no](/img/dfektlan.png){: .img-responsive .img-project }
 I have together with [Thor Martin](https://github.com/thormartin91) built the dfekt LAN website. The website is used as the main information location for every LAN party and has a complete crew management system which handles crew credit for the canteen, creating of crew badges and access control. The site also features a complete competition management and signup system. The website is built with the following technologies and frameworks:
 
 * Python
@@ -34,7 +34,7 @@ I have together with [Thor Martin](https://github.com/thormartin91) built the df
 <div class="project" markdown="1">
 
 ## dfekt LAN Point of sales
-![dfektlan POS](/img/dfektlanpos.png){: .img-responsive }
+![dfektlan POS](/img/dfektlanpos.png){: .img-responsive .img-project }
 Together with the dfekt LAN webpage i created a Point of sales system to use in the canteen. The site is built as a AngularJS webapp that uses the Django website as its backend through a custom made API. The system also handles our crew credit system which allows our crew members to buy items from the canteen with their RFID badge.
 </div>
 
