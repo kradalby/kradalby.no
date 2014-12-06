@@ -38,6 +38,24 @@ I have together with [Thor Martin](https://github.com/thormartin91) built the df
 Together with the dfekt LAN webpage i created a Point of sales system to use in the canteen. The site is built as a AngularJS webapp that uses the Django website as its backend through a custom made API.
 </div>
 
+* * *
+
+<div class="project" markdown="1">
+
+## More projects at GitHub
+I have a lot of open repositories at [GitHub](https://github.com/kradalby) with many projects. 
+
+* [Ansible plays](https://github.com/kradalby/plays)
+* [Many scripts that solves problems i have come across](https://github.com/kradalby/scripts)
+* [Dotfiles](https://github.com/kradalby/dotfiles)
+* [gso - A little game server overview flask app](https://github.com/kradalby/gso)
+* [Netcom kvote - abstract viewer for mobile broadband quota](https://github.com/kradalby/netcom-kvote)
+* [OneCallSMS - Python libary for sending SMS via OneCall](https://github.com/kradalby/OneCallSMS)
+
+</div>
+
+* * *
+
 <div class="project" markdown="1">
 
 </div>
