@@ -45,6 +45,8 @@ Together with the dfekt LAN webpage i created a Point of sales system to use in 
 ## More projects at GitHub
 I have a lot of open repositories at [GitHub](https://github.com/kradalby) with many projects. 
 
+Here is a list of some of them: 
+
 * [Ansible plays](https://github.com/kradalby/plays)
 * [Many scripts that solves problems i have come across](https://github.com/kradalby/scripts)
 * [Dotfiles](https://github.com/kradalby/dotfiles)
