@@ -3,7 +3,6 @@ Date: 2014-12-06 14:08
 Modified: 2014-12-06 14:08
 Summary: My projects
 
-'
 <div class="project">
 
 ## kradalby.no
