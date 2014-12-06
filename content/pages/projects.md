@@ -47,7 +47,7 @@ Together with the dfekt LAN webpage i created a Point of sales system to use in 
 <div class="project padding-vertical" markdown="1">
 
 ## More projects at GitHub
-I have a lot of open repositories at [GitHub](https://github.com/kradalby) with many projects. 
+I have a lot of open repositories at [GitHub](https://github.com/kradalby) with some other projects i worked on.
 
 Here is a list of some of them: 
 
