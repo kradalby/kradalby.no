@@ -88,7 +88,7 @@ Check that its running:
     :::
     systemctl status strider.service
 
-Strider should now be available at http://<serverip>:3000/
+Strider should now be available at http://serverip:3000/
 
 ## Github
 Strider has a good integration with github, which allows it to watch and automatic build projects on different triggers. I had a little hassle with setting it up, but heres how it went down.
@@ -100,7 +100,9 @@ This can be done at [github.com/settings/applications](https://github.com/settin
 
 My personal app is just named strider, and the homepage url should be for example http://strider.example.org/
 
-The most important part of the app creation is the Authorization callback URL. Thus _MUST_ be http://url-to-strider/auth/github/callback
+The most important part of the app creation is the Authorization callback URL. 
+
+This _MUST_ be http://url-to-strider/auth/github/callback
 
 After the app is configured and saved, take note of the ID and Secret as we are going to use them later on.
 
@@ -130,7 +132,7 @@ Make sure the python plugin for strider is installed:
 
 Install python and pip
 
-    ::: 
+    :::
     apt-get install python python-pip python3 python3-pip
 
 Install virtualenv
