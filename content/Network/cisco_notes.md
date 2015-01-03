@@ -200,6 +200,16 @@ To assign a port or portrange to the newly created VLAN:
     Switch(config-if)# end 
 
 
+To make a port capable of passing multiple vlans through, put it in trunk mode:
+
+    :::
+    :::
+    Switch# configure terminal 
+    Switch(config)# interface g0/1 
+    Switch(config-if)# switchport mode access 
+    Switch(config-if)# switchport trunk
+    Switch(config-if)# end 
+
 ## Routing LAN network to InterWebs (StudLAN 2014h)
 
 To get this working we basicly need two L3 interfaces or one L3 interface against internet and a local VLAN for the internal network.
@@ -225,9 +235,5 @@ Set up routing and the route:
     Switch(config)# ip route 0.0.0.0 0.0.0.0 <ip to gateway for uplink>
 
 We also need to set up a local L3 or a VLAN, depending on the network layout.
-
- 
-
- 
 
 
