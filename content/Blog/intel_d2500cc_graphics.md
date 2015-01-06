@@ -1,7 +1,7 @@
 Title: Getting Intel D2500CC graphics working on Debian
 Tags: debian, intel, integrated graphics, graphics, intel d2500cc, d2500, d2500cc
-Date: 
-Modified: 
+Date: 2015-01-06 18:14
+Modified: 2015-01-06 18:14
 Summary: Getting Intel D2500CC integrated graphics working on Debian
 
 [TOC]
