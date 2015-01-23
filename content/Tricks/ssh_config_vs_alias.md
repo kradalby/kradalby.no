@@ -11,6 +11,7 @@ Some years ago i decided to use the ssh user config instead of using alias in my
 I have over the years found some practicalities of using the config.
 
 ## Configuration of a host
+In general, i think the ssh config is more understandable and better structured than a bunch of aliases.
 
 ### General host
 ssh config:
