@@ -10,6 +10,8 @@ I like IRC alot, but for some people the threshold is to high to join because of
 
 Here the IRC client Quassel has a great solution, it allows us to have the Quassel Core on the server and connect to it with a GUI client. Unfortunately the official client does not support a LDAP backend, but there is a pullrequest pending for this feauture, and heres how i built it and installed it on my IRC server.
 
+# Work in progress
+
 ## Header
 
 git clone https://github.com/abustany/quassel.git
