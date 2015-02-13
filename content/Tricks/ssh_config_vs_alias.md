@@ -8,7 +8,7 @@ Summary: Why i think ssh config is more practical than alias
 
 Some years ago i decided to use the ssh user config instead of using alias in my .zshrc file.
 
-I have over the years found some practicalities of using the config.
+I have over the years found some practicalities of using the config file instead of aliases.
 
 ## Configuration of a host
 In general, i think the ssh config is more understandable and better structured than a bunch of aliases.

@@ -6,6 +6,8 @@ Summary: Useful collection of SNMP information i have used, and use frequently.
 
 [TOC]
 
+SNMP is a widely used protocol with a lot of great and not so great features. This is my notes on things related to this protocol that i use frequently.
+
 ## Useful OIDs
 
 ### Interface related
