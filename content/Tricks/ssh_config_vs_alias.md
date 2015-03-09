@@ -1,7 +1,7 @@
 Title: Why i think ssh config is more practical than alias
 Tags: ssh, ssh config, config, alias, scp, mosh
-Date: 2015-01-23 06:55
-Modified: 2015-01-23 11:23
+Date: 2015-03-09 16:44
+Modified: 2015-03-09 19:44
 Summary: Why i think ssh config is more practical than alias
 
 [TOC]
