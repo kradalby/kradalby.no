@@ -55,6 +55,8 @@ help:
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 	lessc -x theme2/static/less/style.less output/theme/css/style.min.css
+	rm -rf /srv/www/kradalby.no/site
+	mv output /srv/www/kradalby.no/site
 	git add .
 	git commit -am 'latest page build'
 	git push origin master
