@@ -32,5 +32,6 @@ Generate files:
     cmake /root/quassel -DWANT_CORE=ON -DWANT_QTCLIENT=OFF -DWANT_MONO=OFF -DWITH_KDE=OFF -DWITH_OXYGEN=OFF -DWITH_OPENSSL=ON -DWITH_WEBKIT=OFF -DWITH_LDAP=ON
 
 Build and install:
+
     make
     make install
