@@ -14,4 +14,4 @@ I also am actively involved in a number of LAN-parties. I am currently the leade
 ## The blog
 My main intention of this blog is to use the posts as documentation for my projects, documentation is something i am not really into, and i though that this approach may help, since most of my knowledge is based on blogposts from people who do the same.
 
-{#gravatar}![me](http://www.gravatar.com/avatar/2e5d2c3dd570ae61ab8b1b41484a6fed?s=350)
+![me](http://www.gravatar.com/avatar/2e5d2c3dd570ae61ab8b1b41484a6fed?s=350){#gravatar}
