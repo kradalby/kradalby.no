@@ -9,6 +9,7 @@ Summary: All the LANs i have attended, as participant or crew
 I have over the years attended a lot of LAN parties. And since i seem to forget some of them, i though i would make a list.
 
 ## Dreamhack Summer
+Website: [dreamhack.se](http://dreamhack.se/)
 
 | Year | Participant/Crew | What Crew? | Hall |
 | ---- | ---------------- | ---------- | ---- |
@@ -19,6 +20,7 @@ I have over the years attended a lot of LAN parties. And since i seem to forget 
 
 
 ## The Gathering
+Website: [gathering.org](http://gathering.org/)
 
 | Year | Participant/Crew | What Crew? |
 | ---- | ---------------- | ---------- |
@@ -29,6 +31,8 @@ I have over the years attended a lot of LAN parties. And since i seem to forget 
 
 
 ## dfekt LAN
+Website: [dfektlan.no](https://dfektlan.no/)
+
 I serve as the leader for the dfekt LAN organization, in addition i work in the tech crew.
 
 | Year | Month            | Role   | What Crew? | Where?           |
@@ -43,6 +47,7 @@ I serve as the leader for the dfekt LAN organization, in addition i work in the 
 
 
 ## StudLAN
+Website: [studlan.no](http://studlan.no/)
 
 | Year | Semester | Role | What Crew? | Where?          |
 | ---- | -------- | ---- | ---------- | --------------- |
@@ -55,6 +60,7 @@ I serve as the leader for the dfekt LAN organization, in addition i work in the 
 
 
 ## PolarParty
+Website: [polarparty.no](http://polarparty.no)
 
 | Year | Month   | Role | What Crew? | Where?          |
 | ---- | ------- | ---- | ---------- | --------------- |
