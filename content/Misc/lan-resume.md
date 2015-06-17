@@ -1,7 +1,7 @@
 Title: LAN resume
 Tags: lan, lan parties, dataparty, computer party, computer parties
 Date: 2015-01-01 10:22
-Modified: 2015-06-17 10:22
+Modified: 2015-06-17 23:57
 Summary: All the LANs i have attended, as participant or crew
 
 [TOC]
@@ -11,7 +11,7 @@ I have over the years attended a lot of LAN parties. And since i seem to forget 
 ## Dreamhack Summer
 Website: [dreamhack.se](http://dreamhack.se/)
 
-| Year | Participant/Crew | What Crew? | Hall |
+| Year | Role             | What Crew? | Hall |
 | ---- | ---------------- | ---------- | ---- |
 | 2015 | Participant      | -          | D    |
 | 2014 | Participant      | -          | C    |
@@ -22,7 +22,7 @@ Website: [dreamhack.se](http://dreamhack.se/)
 ## The Gathering
 Website: [gathering.org](http://gathering.org/)
 
-| Year | Participant/Crew | What Crew? |
+| Year | Role             | What Crew? |
 | ---- | ---------------- | ---------- |
 | 2014 | Crew             | Info:Desk  |
 | 2013 | Crew             | Info:Desk  |
