@@ -1,0 +1,51 @@
+Title: LAN parties
+Tags: dataparty, lan party, lan parties, computer party, computer parties, digital festival, digital festivals
+Date: 2015-06-29 17:22
+Modified: 
+Summary: A little overview of the LAN parties i know, and would like to keep track off.
+
+[TOC]
+
+Since there are a lot of LAN parties around, i though i made a little list with the ones i know about and would like to keep track on.
+
+## Norway
+
+### PolarParty
+Site: [polarparty.no](http://polarparty.no/)
+
+### StudLAN
+Site: [studlan.no](https://studlan.no/)
+
+### TrondeLAN
+Site: [trondelan.no](https://trondelan.no/)
+
+### dfekt LAN
+Site: [dfektlan.no](https://dfektlan.no/)
+
+### ByLAN
+Site: [bylan.net](https://bylan.net/)
+
+### Zargate
+Site: [zargate.org](https://zargate.org/)
+
+### Sørlanet
+Site: [sorlanet.no](http://sorlanet.no)
+
+### Capslock LAN
+Site: [capslocklan.net](http://capslocklan.net/)
+
+
+## Sweden
+
+### Dreamhack
+Site: [dreamhack.se](http://dreamhack.se)
+
+## USA
+
+### QuakeCon
+Site: [quakecon.org](http://www.quakecon.org/)
+
+## Belgium
+
+### Frag-o-Matic
+Site: [fom.be](http://fom.be)

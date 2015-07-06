@@ -120,3 +120,14 @@ Download the latest com32 module from [the hdt project](http://www.hdt-project.o
     wget http://www.hdt-project.org/raw-attachment/wiki/hdt-0.5.0/hdt_0_5_2.c32
 
 Update the menu to the newest version in tools.cfg.
+
+### Client machine behind NAT
+If you are trying to access a TFTP server currently residing outside your NAT, you may need to activate the following modules on your iptables gateway/router
+
+    :::
+    modprobe ip_nat_tftp
+    modprobe ip_conntrack_tftp
+    modprobe ip_conntrack
+    modprobe nf_nat_tftp
+    modprobe nf_conntrack_tftp
+
