@@ -33,7 +33,7 @@ Provision the domain:
 Example provision walkthrough:
 
     :::
-    Realm [FAP.NO]: FAP.NO
+    Realm [FAP.NO]: AD.FAP.NO
      Domain [FAP.NO]: FAP.NO
      Server Role (dc, member, standalone) [dc]: dc
      DNS backend (SAMBA_INTERNAL, BIND9_FLATFILE, BIND9_DLZ, NONE) [SAMBA_INTERNAL]: SAMBA_INTERNAL
