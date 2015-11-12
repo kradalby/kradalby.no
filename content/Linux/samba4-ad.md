@@ -30,6 +30,11 @@ Provision the domain:
     :::
     samba-tool domain provision --use-rfc2307 --interactive
 
+Turn off password complexity:
+
+    :::
+    samba-tool domain passwordsettings set --complexity=off
+
 Example provision walkthrough:
 
     :::
@@ -60,7 +65,8 @@ Verify the level:
         -D "read@fap.no" \
         -W \
         -b "dc=fap,dc=no" '(sAMAccountName=*)'
-    
+
+
     :::
     ldapsearch \
         -x -h localhost \
