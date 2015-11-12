@@ -66,6 +66,7 @@ Verify the level:
         -W \
         -b "dc=fap,dc=no" '(sAMAccountName=*)'
 
+Filter by group:
 
     :::
     ldapsearch \
