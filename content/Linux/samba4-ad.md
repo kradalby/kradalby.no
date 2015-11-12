@@ -30,11 +30,6 @@ Provision the domain:
     :::
     samba-tool domain provision --use-rfc2307 --interactive
 
-Turn off password complexity:
-
-    :::
-    samba-tool domain passwordsettings set --complexity=off
-
 Example provision walkthrough:
 
     :::
@@ -50,6 +45,11 @@ Rais the domain level to 2008_R2 for more functionality:
 
     :::
     samba-tool domain level raise --domain-level 2008_R2 --forest-level 2008_R2 
+
+Turn off password complexity:
+
+    :::
+    samba-tool domain passwordsettings set --complexity=off
 
 Verify the level:
 
