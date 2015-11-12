@@ -151,6 +151,17 @@ On 3560 series switches and other 3000 series switches, the optimal firmware is 
 
 ipservices has routing protocols, ipbase dont. ipbase still has some layer 3 functionality.
 
+### Verify
+To verify files, mainly firmware, issue the following command:
+
+    :::C
+    verify /md5 filesystem:filename [md5-hash]
+
+## Diagnostic
+To trigger diagnostics:
+
+    :::
+    diagnostic start switch 1 test all
 
 # Interface
 
@@ -172,7 +183,7 @@ You also want to activate ip routing, and set a ip on the interface.
 ## SNMP
 To activate a read only public community execute the following commands in configuration mode:
 
-    :::
+    :::C
     snmp-server community public RO
     snmp-server location Lake Travis (Austin) Dial POP
     snmp-server contact net-admin@aurora.the.net
@@ -184,7 +195,7 @@ If using observium, use very accurate location to get map functionality to work.
 
 To create a VLAN on a C3560G enter configure mode and execute:
 
-    :::
+    :::C
     Switch# configure terminal
     Switch(config)# vlan 20
     Switch(config-vlan)# name test20
@@ -192,7 +203,7 @@ To create a VLAN on a C3560G enter configure mode and execute:
 
 To assign a port or portrange to the newly created VLAN:
 
-    :::
+    :::C
     Switch# configure terminal 
     Switch(config)# interface g0/1 
     Switch(config-if)# switchport mode access 
@@ -202,8 +213,7 @@ To assign a port or portrange to the newly created VLAN:
 
 To make a port capable of passing multiple vlans through, put it in trunk mode:
 
-    :::
-    :::
+    :::C
     Switch# configure terminal 
     Switch(config)# interface g0/1 
     Switch(config-if)# switchport mode access 
@@ -218,7 +228,7 @@ The basic idea is that one L3 interface has a given ip configuration against the
 
 To configure the uplink:
 
-    :::
+    :::C
     Switch# configure terminal 
     Switch(config)# interface g0/1 
     Switch(config-if)# no switchport
@@ -229,7 +239,7 @@ To configure the uplink:
 
 Set up routing and the route:
 
-    :::
+    :::C
     Switch# configure terminal 
     Switch(config)# ip routing
     Switch(config)# ip route 0.0.0.0 0.0.0.0 <ip to gateway for uplink>
