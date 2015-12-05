@@ -114,3 +114,20 @@ And then we need to define the uwsgi_pass inside a location where we want the uW
     }
 
 Now restart Nginx and the application should be available.
+
+
+# FreeBSD
+
+portnap fetch update
+-cd /usr/ports/www/uwsgi
+-make install
+-cd /usr/ports/www/uwsgi/work/uwsgi-2.0.11.2
+
+get source
+python uwsgiconfig.py --build core
+PYTHON=python2.7 ./uwsgi --build-plugin "plugins/python python27"
+PYTHON=python3.5 ./uwsgi --build-plugin "plugins/python python35"
+mv python*plugin* /usr/local/lib/uwsgi/
+mv uwsgi /usr/local/bin/
+
+
