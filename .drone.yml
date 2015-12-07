@@ -1,0 +1,27 @@
+build:
+    image: kradalby/ci-tox:latest
+    pull: true
+    commands:
+      - pip install -r requirements.txt
+      - make html
+
+notify:
+  email:
+    from: drone@fap.no
+    host: smtp.stud.ntnu.no
+    port: 25
+    recipients:
+      - kradalby@kradalby.no
+
+deploy:
+  rsync:
+    user: www
+    host: onyx.fap.no
+    port: 22
+    source: output/
+    target: /usr/local/www/kradalby.no/site/
+    delete: false
+    recursive: true
+    exclude:
+    commands:
+      - echo "Done"
