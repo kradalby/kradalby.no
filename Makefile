@@ -54,7 +54,7 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
-	lesscpy -x theme2/static/less/style.less > output/theme/css/style.min.css
+	lesscpy -x theme2/static/less > output/theme/css/style.min.css
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
