@@ -14,17 +14,6 @@ notify:
       - kradalby@kradalby.no
 
 deploy:
-  ssh:
-    host: onyx.fap.no
-    user: www
-    port: 22
-    commands:
-      - cd /usr/local/www/source.fap.no
-      - git pull
-      - make prod
-      - supervisorctl restart uwsgi_sourceapi
-
-deploy:
   rsync:
     user: www
     host: onyx.fap.no
