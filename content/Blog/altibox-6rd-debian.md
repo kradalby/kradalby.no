@@ -25,9 +25,9 @@ We also need:
 
 ## Calculate your IPv6 prefix
 
-The first we need to do is to calculate what our IPv6 prefix will be based on our public ip.
+The first we need to do is to calculate what our IPv6 prefix will be based on our public IP.
 
-To do this we will use ipv6calc, some of the altibox data and our public ip.
+To do this, we will use ipv6calc, some of the altibox data and our public IP.
 
     :::bash
     PREFIX=2a01:79c::
@@ -38,14 +38,14 @@ To do this we will use ipv6calc, some of the altibox data and our public ip.
 
     ipv6calc --action 6rd_local_prefix --6rd_prefix $PREFIX/$PREFIX_LENGTH --6rd_relay_prefix $RELAY_PREFIX/$RELAY_PREFIX_LENGTH $PUBLIC
 
-When you run this in the terminal of the linux host you will get three lines of output, ignore the first two and keep the actual IPv6 prefix.
+When you run this in the terminal of the Linux host you will get three lines of output, ignore the first two and keep the actual IPv6 prefix.
 It should look something like this 2a01:79d:aaaa:bbbb::/62
 
 ## Create the tunnel
 
-Next we will actually setup and test the tunnel. My preferred way of doing this is to add every command to a script so i can run them all at once and to make it easier to re-run them.
+Next we will configure and test the tunnel. My preferred way of doing this is to add every command to a script so I can run them all at once and to make it easier to re-run them.
 
-In my script there is two sections, the variables and the ip commands we use to setup the tunnel.
+In my script there is two sections, the variables, and the IP commands we use to setup the tunnel.
 
 Here is the variable part, with the IPv6 prefix we calculated earlier:
 
@@ -72,7 +72,7 @@ Now we have to do the part where we actually create the tunnel and set up the in
     ip -6 addr add $IPv6_PREFIX:0::/$PREFIX_LENGTH dev 6rd
     ip -6 route add 2000::/3 via ::$RELAY_PREFIX dev 6rd
 
-The commands over will add a IPv6 address to the loopback interface, then create the 6rd tunnel and apply the Altibox and prefix information. After the tunnel is created it will be brought up. When the link us up it will add a IPv6 address and add a IPv6 route to the routing table via the 6rd tunnel.
+The commands over will add an IPv6 address to the loopback interface, then create the 6rd tunnel and apply the Altibox and prefix information. After the tunnel is created it will be brought up. When the link us up it will add an IPv6 address and add an IPv6 route to the routing table via the 6rd tunnel.
 
 When all this commands are finished successfully you should be able to use IPv6 from this machine. To test issue:
 
@@ -82,9 +82,9 @@ When all this commands are finished successfully you should be able to use IPv6 
 
 ## IPv6 forwarding to local network
 
-If your box, like mine is a router in my local network. You would probably like to make the other computers also get IPv6.
+If your box, like mine, is a router in my local network. You would probably like to make the other computers also get IPv6.
 
-To accomplish this we need to do three things. Give the LAN facing interface a IPv6 address, allow IPv6 forwarding and setup Radvd.
+To accomplish this, we need to do three things. Give the LAN facing interface an IPv6 address, allow IPv6 forwarding and setup Radvd.
 
 ### Add an IPv6 address to LAN
 
@@ -127,4 +127,3 @@ And then configure it (/etc/radvd.conf):
 Remember to change the interface and prefix correctly.
 
 You should also add service radvd start to your script as it does not start by default, and you don't want it running unless the tunnel is up.
-
