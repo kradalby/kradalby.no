@@ -1,7 +1,7 @@
 Title: OpenVPN with LDAP support
 Tags: vpn, ldap, openldap, openvpn, private networking, virtual private network
-Date: 
-Modified: 
+Date: 2014-01-01 10:00
+Modified: 2015-01-09 12:09
 Summary: How to set up OpenVPN with LDAP login instead of certs.
 
 [TOC]
