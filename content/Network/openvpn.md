@@ -1,16 +1,16 @@
 Title: OpenVPN with LDAP support
-Tags: vpn, ldap, openldap, openvpn, private networking, virtual private network
+Tags: VPN, LDAP, OpenLDAP, OpenVPN, private networking, virtual private network
 Date: 2014-01-01 10:00
 Modified: 2015-01-09 12:09
 Summary: How to set up OpenVPN with LDAP login instead of certs.
 
 [TOC]
 
-I was on a trip in the United States for two weeks and relied heavily on free and open networks from resturants and hotels. Therefore before we left i took a few hours to set up a OpenVPN server.
+I was on a trip in the United States for two weeks and relied heavily on free and open networks from restaurants and hotels. Therefore, before we left I took a few hours to set up an OpenVPN server.
 
-The reason i chose OpenVPN was ease of setup, the quite good Mac client [Tunnelblick](https://code.google.com/p/tunnelblick/) and the fact that it was a SSLVPN. 
+The reason I chose OpenVPN was ease of setup, the quite good Mac client [Tunnelblick](https://code.google.com/p/tunnelblick/) and the fact that it was an SSLVPN.
 
-One of the benefits of SSLVPN is that you can configure it to run on port 443 over TCP (you can proably configure other vpn types in this way to). Quite a few of the Captive portals runs on this port, and have no restrictions for other type of traffic than HTTPS. This means that the VPN can connect before you accept the terms for the WiFi or even pay in some situations.
+One of the benefits of SSLVPN is that you can configure it to run on port 443 over TCP (you can probably configure other VPN types in this way too). Quite a few of the Captive portals runs on this port and have no restrictions for another type of traffic than HTTPS. This means that the VPN can connect before you accept the terms for the WiFi or even pay in some situations.
 
 ## Installation
 We will start with installing OpenVPN:
@@ -36,8 +36,8 @@ Initialize the PKI:
 
     :::
     cd /etc/openvpn/easy-rsa/
-    chmod +rwx * 
-    source ./vars 
+    chmod +rwx *
+    source ./vars
     ./clean-all
     ./pkitool --initca
 
@@ -61,43 +61,43 @@ We will start off by configuring the LDAP support
 
 ### LDAP
 First we will add a base configuration:
-   
+
     :::
     <LDAP>
         URL     ldap://slowbro.fap
-    
+
         BindDN      cn=admin,dc=fap,dc=no
-    
+
         Password    test
-    
+
         Timeout     15
-    
+
         TLSEnable   no
-    
+
         FollowReferrals yes
-    
+
         TLSCACertFile   /usr/local/etc/ssl/ca.pem
-    
+
         TLSCACertDir    /etc/ssl/certs
-    
+
         TLSCertFile /usr/local/etc/ssl/client-cert.pem
         TLSKeyFile  /usr/local/etc/ssl/client-key.pem
-    
+
         # Cipher Suite
         # The defaults are usually fine here
         # TLSCipherSuite    ALL:!ADH:@STRENGTH
     </LDAP>
-    
+
     <Authorization>
         BaseDN      "ou=people,dc=fap,dc=no"
-    
+
         SearchFilter    "(uid=%u)"
-    
+
         RequireGroup    false
-    
+
         # Add non-group members to a PF table (disabled)
         #PFTable    ips_vpn_users
-    
+
         <Group>
             BaseDN      "ou=groups,dc=fap,dc=no"
             SearchFilter    "(cn=vpn)"
@@ -106,33 +106,33 @@ First we will add a base configuration:
         </Group>
     </Authorization>
 
-Take the base configuration and put it in /etc/openvpn/auth/auth-ldap.conf. Then its pretty straight forward to edit it to your needs.
+Take the base configuration and put it in /etc/openvpn/auth/auth-ldap.conf. Then it is pretty straight forward to edit it to your needs.
 
-At the moment i have not got the group filtering to work.
+At the moment, I have not got the group filtering to work.
 
 ### The server
-OpenVPN can run on both TCP and UDP aswell as multiple ports, however, you will need to create a configuration for each of them.
+OpenVPN can run on both TCP and UDP as well as multiple ports, however, you will need to create a configuration for each of them.
 
 Here is my base TCP configuration:
 
     :::
     plugin /usr/lib/openvpn/openvpn-auth-ldap.so /etc/openvpn/auth/auth-ldap.conf
     client-cert-not-required
-    
+
     port 1194
-    
+
     proto tcp
-    
+
     dev tun
-    
+
     ca ca.crt
     cert server.crt
     key server.key  # This file should be kept secret
-    
+
     dh dh2048.pem
-    
+
     server 10.8.0.0 255.255.255.0
-    
+
     ifconfig-pool-persist ipp.txt
     push "dhcp-option DNS 8.8.8.8"
     push "dhcp-option DNS 129.241.0.200"
@@ -150,21 +150,21 @@ There is my base UDP configuration:
     :::
     plugin /usr/lib/openvpn/openvpn-auth-ldap.so /etc/openvpn/auth/auth-ldap.conf
     client-cert-not-required
-    
+
     port 1194
-    
+
     proto udp
-    
+
     dev tun
-    
+
     ca ca.crt
     cert server.crt
     key server.key  # This file should be kept secret
-    
+
     dh dh2048.pem
-    
+
     server 10.9.0.0 255.255.255.0
-    
+
     ifconfig-pool-persist ipp.txt
     push "dhcp-option DNS 8.8.8.8"
     push "dhcp-option DNS 129.241.0.200"
@@ -180,7 +180,7 @@ There is my base UDP configuration:
 The configuration files can be named tcp.conf and udp.conf. OpenVPN will detect them.
 
 ### IPTables
-The last thing we need to do on the server is to setup iptables so it will allow the traffic to pass through and to masquerade it.
+The last thing we need to do on the server is to set up iptables so it will allow the traffic to pass through and to masquerade it.
 
 First, allow IP forwarding in /etc/sysctl.conf:
 

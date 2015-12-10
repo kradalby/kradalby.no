@@ -6,14 +6,14 @@ Summary: A collection of commands that are useful for network stuff with nmap.
 
 [TOC]
 
-## Scan ip range
-Find host that is alive within a ip range.
+## Scan IP range
+Find the hosts that are alive within an IP range.
 
     :::bash
     nmap -sP 192.168.0.0/24
 
 ## Scan port range
-Find ports on host.
+Find ports on a host.
 
     :::bash
     nmap 192.168.1.1 -p100-200
@@ -24,7 +24,7 @@ Try to find out what OS a host is running.
     :::bash
     nmap -O 192.168.1.1
 
-## Scan for udp servies
+## Scan for udp services
 This needs root privileges.
 
     :::bash

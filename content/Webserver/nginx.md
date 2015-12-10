@@ -1,7 +1,7 @@
-Title: Installing Nginx on Debian Wheezy 
+Title: Installing Nginx on Debian Wheezy
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: webserver wheezy debian nginx
+Tags: webserver wheezy Debian nginx
 Summary: Installation guide for the latest Nginx on Debian Wheezy
 
 [TOC]
@@ -20,7 +20,7 @@ Then add the repos to source.list:
     deb http://nginx.org/packages/debian/ codename nginx
     deb-src http://nginx.org/packages/debian/ codename nginx
 
-Remember to swap out codename for the current debian version, as of now, wheezy.
+Remember to swap out codename for the current Debian version, as of now, wheezy.
 
 ## Install
 Now that we have repositories for installing Nginx we can go ahead and do so:
@@ -31,14 +31,14 @@ Now that we have repositories for installing Nginx we can go ahead and do so:
 
 
 ## Running a Django app from a suburl
-If we want to run a django application from a suburl (kradalby.no/someapp) we need to make the app aware of that path when we send the url to it.
+If we want to run a Django application from a suburl (kradalby.no/someapp) we need to make the app aware of that path when we send the url to it.
 If we use a proxy to send request, add this line:
-    
+
     :::
     proxy_set_header SCRIPT_NAME /myapp;
 
 
-## Websocket proxy
+## WebSocket proxy
 To proxy websockets through nginx we need to pass upgrade through the Connection proxy header like this:
 
     :::
@@ -52,7 +52,7 @@ To proxy websockets through nginx we need to pass upgrade through the Connection
 
 ## Node app proxy
 
-To proxy most node apps i have been using, you will need to have a subdomain for the app.
+To proxy most node apps I have been using, you will need to have a subdomain for the app.
 The settings below where used to proxy strider cd.
 
     :::

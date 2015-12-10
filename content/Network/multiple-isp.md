@@ -43,5 +43,3 @@ This can be done by taking traffic marked and directing it to the table.
 
     :::
     ip rule add fwmark 2 table 2
-
-
