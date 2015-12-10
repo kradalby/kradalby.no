@@ -1,8 +1,8 @@
 Title: Notes about ISC DHCPD
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: network, networking, dhcp
-Summary: These are my notes for ISC DHCPD, some tricks and stuff
+Tags: network, networking, DHCP
+Summary: These are my notes for ISC DHCPD, some tricks, and stuff
 
 ### Find vendor identifier easy
 
@@ -18,4 +18,3 @@ https://www.iana.org/assignments/bootp-dhcp-parameters/bootp-dhcp-parameters.xht
 
 #### ISC DHCP options/man
 http://linux.about.com/od/commands/l/blcmdl5_dhcpopt.htm
-

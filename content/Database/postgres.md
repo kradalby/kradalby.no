@@ -6,7 +6,7 @@ Summary: Basic PostgreSQL commands that i use.
 
 ## Use
 
-My prefered way to get access:
+My preferred way to get access:
 
     :::bash
     su postgres -
@@ -22,7 +22,7 @@ My prefered way to get access:
     :::bash
     \c databasename
 
-## Information 
+## Information
 
 **List attributes and settings for table**
 
@@ -51,7 +51,7 @@ My prefered way to get access:
 
 From shell:
 
-    :::bash 
+    :::bash
     createuser username
 
     dropuser username
@@ -64,7 +64,7 @@ From psql:
 ### Database
 
 From shell:
-    
+
     :::bash
     createdb dbname
 

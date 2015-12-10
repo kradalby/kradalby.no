@@ -6,7 +6,7 @@ Summary: Setting up 6rd on my Linux router
 
 [TOC]
 
-Altibox lets its users setup IPv6 via 6rd until their dualstack network is finished and rolled out. In this post i will show you how to set it up on a Linux box that is directly connected to a Altibox modem that is configured in bridge mode.
+Altibox lets its users setup IPv6 via 6rd until their dual stack network is finished and rolled out. In this post i will show you how to set it up on a Linux box that is directly connected to a Altibox modem that is configured in bridge mode.
 
 First of all we need the Altibox 6rd information:
 
@@ -19,7 +19,7 @@ First of all we need the Altibox 6rd information:
 
 We also need:
 
-* A linux kernel that is IPv6 ready (and 6rd)
+* A Linux kernel that is IPv6 ready (and 6rd)
 * ipv6calc (apt-get install ipv6calc)
 
 
@@ -45,7 +45,7 @@ It should look something like this 2a01:79d:aaaa:bbbb::/62
 
 Next we will configure and test the tunnel. My preferred way of doing this is to add every command to a script so I can run them all at once and to make it easier to re-run them.
 
-In my script there is two sections, the variables, and the IP commands we use to setup the tunnel.
+In my script, there is two sections, the variables, and the IP commands we use to setup the tunnel.
 
 Here is the variable part, with the IPv6 prefix we calculated earlier:
 

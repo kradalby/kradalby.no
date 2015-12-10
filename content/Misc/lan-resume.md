@@ -1,12 +1,12 @@
 Title: LAN resume
-Tags: lan, lan parties, dataparty, computer party, computer parties
+Tags: LAN, LAN parties, dataparty, computer party, computer parties
 Date: 2015-01-01 10:22
 Modified: 2015-06-17 23:57
-Summary: All the LANs i have attended, as participant or crew
+Summary: All the LANs I have attended, as participant or crew
 
 [TOC]
 
-I have over the years attended a lot of LAN parties. And since i seem to forget some of them, i though i would make a list.
+I have over the years attended a lot of LAN parties. And since I seem to forget some of them, I though I would make a list.
 
 ## Dreamhack Summer
 Website: [dreamhack.se](http://dreamhack.se/)
@@ -33,7 +33,7 @@ Website: [gathering.org](http://gathering.org/)
 ## dfekt LAN
 Website: [dfektlan.no](https://dfektlan.no/)
 
-I serve as the leader for the dfekt LAN organization, in addition i work in the tech crew.
+I serve as the leader for the dfekt LAN organization, in addition, I work in the tech crew.
 
 | Year | Month            | Role   | What Crew? | Where?           |
 | ---- | ---------------- | ------ | ---------- | ---------------- |
@@ -65,4 +65,3 @@ Website: [polarparty.no](http://polarparty.no)
 | Year | Month   | Role | What Crew? | Where?          |
 | ---- | ------- | ---- | ---------- | --------------- |
 | 2014 | October | Crew | Security   | Stokkehallen    |
-
