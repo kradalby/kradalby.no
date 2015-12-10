@@ -1,8 +1,8 @@
 Title: Weechat
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: weechat, irc
-Summary: A little collection of commands i use rarly in weechat, but still need.
+Tags: weechat, IRC
+Summary: A little collection of commands I use rarely in weechat, but still need.
 
 ## Split screen.
 To split screen horizontally:
@@ -11,8 +11,6 @@ To split screen horizontally:
     /window splith [percentage]
 
 To split vertically:
-    
+
     :::bash
     /window splitv [percentage]
-
-

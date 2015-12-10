@@ -1,8 +1,8 @@
-Title: Sympa 
+Title: Sympa
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: sympa, mail, maillist, mailinglist, debian
-Summary: How i install Sympa on Debian
+Tags: sympa, mail, maillist, mailinglist, Debian
+Summary: How I install Sympa on Debian
 
 [TOC]
 
@@ -16,10 +16,10 @@ Install Sympa using apt:
 Note: The command over will prevent Sympa from installing apache. It will install MySQL, if you want to use PostgreSQL, remove mysql-server.
 
 ## WWSympa with Nginx
-First of all we need to make sympa use fastcgi. This is done by setting use_fast_cgi to 1 in /etc/sympa/wwsympa.conf.
+First of all, we need to make Sympa use FastCGI. This is done by setting use_fast_cgi to 1 in /etc/sympa/wwsympa.conf.
 
 ### Install fcgiwrap
-We need the fcgiwrap package to be able to execute the sympa fcgi files.
+We need the fcgiwrap package to be able to execute the Sympa fcgi files.
 
     :::bash
     apt-get install fcgiwrap
@@ -29,7 +29,7 @@ It is important to change the fcgiwrap user in the init.d script to nginx instea
 ### Configuring Nginx
 
 In your Nginx configuration directory create a file called sympa_fcgi.conf. This will contain all the fastcgi settings for sympa. Add the following content:
-    
+
     :::
     gzip off;
     fastcgi_pass   unix:/run/fcgiwrap.socket;
@@ -56,7 +56,7 @@ In your Nginx configuration directory create a file called sympa_fcgi.conf. This
     fastcgi_param  HTTP_HOST          $server_name;
     fastcgi_intercept_errors on;
 
-Then we need to create a vhost for every domain you want mailinglist for. I have them all in one file called sympa_vhost.conf and the first entry looks like this:
+Then we need to create a vhost for every domain you want mailing list for. I have them all in one file called sympa_vhost.conf and the first entry looks like this:
 
     :::
     server {
@@ -105,7 +105,7 @@ When creating a sympa vhost we need a couple of files and directories:
 The vhost configuration information can be found in the Nginx part.
 
 ### robot.conf
-Is the file that sympa itself uses to define a vhost. It holds information about listmaster, who can create list, where the webinterface is located and the name. It has to be located in the sympa configration directory within a folder that is named after the domain it will cover.
+Is the file that Sympa itself uses to define a vhost. It holds information about listmaster, who can create a list, where the web interface is located and the name. It has to be located in the Sympa configuration directory within a folder that is named after the domain it will cover.
 
 Example:
 
@@ -113,11 +113,7 @@ Example:
 
 ### Sympa list_data directory for domain
 Sympa also needs a place to save list data. This will be in /var/lib/sympa/list_data/ in a folder named after the domain. To create:
-    
+
     :::bash
     mkdir /var/lib/sympa/list_data/my.domain.tld
     chown -R sympa:sympa /var/lib/sympa/list_data
-
-
-
-

@@ -60,7 +60,7 @@ Get it from Dropbox or Snorlax.
 
 Copy acucorp to C:\
 
-Copy shortcut to Desktop 
+Copy shortcut to Desktop
 
 Install Fonts
 
@@ -69,7 +69,7 @@ To be able to send files to Tupperware Nordic, and to do web order stuff, we nee
 
 #### TWSDATA
 Copy folder to the root of the C Drive.
-Start the sbsdatac application, it will give a user not set error. 
+Start the sbsdatac application, it will give a user not set error.
 Click ok, and go to parameters, check settings and click ok.
 
 #### DAS
@@ -80,7 +80,7 @@ Username: Kristine-Breiland.Dalby
 Password: Atomic
 
 Make sure that the drive letter for every folder is correct and is on the network drive.
-Also make sure that the distributor number is correct: 2045.
+Also, make sure that the distributor number is correct: 2045.
 
 
 ### Java
@@ -91,7 +91,7 @@ Get it [here](http://get.adobe.com/flashplayer/otherversions/).
 
 ### Internet Explorer
 Homepages:
-    
+
     :::
     https://www.google.no/
     http://81.7.144.10/login.aspx?
@@ -123,7 +123,7 @@ Apple discussion: https://discussions.apple.com/message/23658255
 ## Remote control
 
 ### LogMeIn
-Since it is Tupperware Nordic that uses LogMeIn, we need them to send a install link.
+Since it is Tupperware Nordic that uses LogMeIn, we need them to send an install link.
 Contact Olga: OlgaPalashina@tupperware.com
 
 ### VNC
@@ -143,4 +143,3 @@ Windows drives are currently installed in this manner:
     OK           P:        \\192.168.1.3\programmer         MWN
     OK           T:        \\192.168.1.3\data               MWN
     OK           Z:        \\192.168.1.3\data\Dokument      MWN
-

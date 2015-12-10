@@ -5,7 +5,7 @@ Tags: samba, smb, smbd, smb2
 Summary: Description on how to setup Samba.
 
 
-This guide is written for Samba3 as that is what i have on my system.
+This guide is written for Samba3 as that is what I have on my system.
 Samba4 does not need a system user for every samba user.
 
 ## Installation
@@ -19,7 +19,7 @@ Samba4 does not need a system user for every samba user.
 The sambaconfiguration file is located in /etc/samba/smb.conf
 
 An example block for a share:
-    
+
     :::bash
     [Storage]
         path = /storage
@@ -29,7 +29,7 @@ An example block for a share:
         write list = kradalby
         valid users = kradalby meepo
 
-Note: This block contains overlapping settings, do not for example use writable with writelist.
+Note: This block contains overlapping settings, do not, for example, use writable with write list.
 
 
 ### Adding users
@@ -42,7 +42,7 @@ To add a user in samba3:
 To add a user in samba4:
 
     :::bash
-    samba-tool user add username 
+    samba-tool user add username
 
 
 ## Miscellaneous
@@ -54,4 +54,3 @@ Samba is configured by default not to follow symlinks because of security. If yo
     follow symlinks = yes
     wide links = yes
     unix extensions = no
-

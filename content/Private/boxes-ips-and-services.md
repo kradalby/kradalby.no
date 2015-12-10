@@ -28,13 +28,13 @@ save_as: private/boxes-ips-and-services.html
     HTTP: 80
 
     Notes:
-    SSH portforward to connect to VNC or any other host on the local network.
+    SSH port forward to connect to VNC or any other host on the local network.
 
 #### kontor
 
     Hostname: kontor
-    Local ip: 192.168.1.3
-    Remote ip: Dynamic
+    Local IP: 192.168.1.3
+    Remote IP: Dynamic
     Domain: tw.fap.no
     Purpose: Tupperware Warehouse system
 
@@ -79,7 +79,7 @@ save_as: private/boxes-ips-and-services.html
 
     Hostname: tentacruel
     Local ip: -
-    Remote ip: Dynamic
+    Remote IP: Dynamic
     Domain: th.fap.no
     Purpose: Router, mailinglists, kavik
 

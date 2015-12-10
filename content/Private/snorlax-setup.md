@@ -8,7 +8,7 @@ save_as: private/snorlax-setup.html
 
 [TOC]
 
-## Harddrives
+## Hard drives
 
 ### Overview
 
@@ -47,7 +47,7 @@ save_as: private/snorlax-setup.html
 ### Raids
 
 #### Storage
-    
+
     Disks: SATA5, SATA6
     Size: 4tb
     Type: RAID1
@@ -62,11 +62,11 @@ save_as: private/snorlax-setup.html
     useradd -b /storage/backup -d /storage/backup -M -s /bin/bash meepo
     chown -R meepo.meepo /storage/backup
 
-I do not set a password, since i am only going to use keys for this account.
+I do not set a password since I am only going to use keys for this account.
 
 
 ## Jottacloud
 
 
 ## Samba
-Example samba config files is available on github.
+Example samba config files are available on GitHub.

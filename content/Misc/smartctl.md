@@ -1,7 +1,7 @@
 Title: Checking S.M.A.R.T. status under Linux
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: smart, linux, harddrive, ssd
+Tags: smart, Linux, harddrive, SSD
 Summary: Checking S.M.A.R.T. status under Debian Linux
 
 [TOC]
@@ -14,7 +14,7 @@ Summary: Checking S.M.A.R.T. status under Debian Linux
 ## Checking status
 
 Check status of the drive:
-    
+
     :::bash
     smartctl -H /dev/sda
 

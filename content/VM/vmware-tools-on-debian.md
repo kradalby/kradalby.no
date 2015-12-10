@@ -1,7 +1,7 @@
-Title: Install VMware tools on Debian 
+Title: Install VMware tools on Debian
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: vmware, tools, linux, debian
+Tags: VMware, tools, Linux, Debian
 Summary: How to install VMware tools on a Debian guest.
 
 [TOC]
@@ -13,11 +13,11 @@ First use the "Guest - Install/Upgrade VMware Tools" to get the install iso moun
 Secondly log in as root on the guest.
 
 Mount the CD room:
-    
+
     :::
     mount /dev/cdromm /mnt
 
-Unarchive the files: (remember to stay in your home folder so the files ends up there)
+Unarchive the files: (remember to stay in your home folder so the files end up there)
 
     tar xzf /mnt/VMwareTools*
 
@@ -32,7 +32,7 @@ Install the needed packages to build VMware tools:
     apt-get update
     apt-get install gcc make linux-headers-$(uname -r)
 
-Execute the install script: 
+Execute the install script:
 
     :::
     cd vmware-tools-distrib

@@ -1,7 +1,7 @@
 Title: uWSGI and Nginx on Debian Wheezy
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: nginx, uwsgi, django, python, debian
+Tags: nginx, uwsgi, Django, python, Debian
 Summary: Setup instructions for uWSGI on Debian Wheezy.
 
 [TOC]
@@ -9,10 +9,10 @@ Summary: Setup instructions for uWSGI on Debian Wheezy.
 
 Preconditions: Nginx is installed on the server.
 
-We will set up uWSGI in emperor mode, which basicly means that a uWSGI daemon will spawn a master with workers for every uWSGI application we got.
+We will set up uWSGI in emperor mode, which basically means that a uWSGI daemon will spawn a master with workers for every uWSGI application we got.
 
 
-## Install uWSGI 
+## Install uWSGI
 We are going to install uWSGI via pip, so we need to install:
 
     :::bash
@@ -21,13 +21,13 @@ We are going to install uWSGI via pip, so we need to install:
 Note: If you want to run python3, use python3, python3-dev and python3-pip.
 
 Now install the latest version through pip:
-    
-    :::bash 
+
+    :::bash
     pip install uwsgi
 
 Create a /etc directory for the uWSGI application ini files:
 
-    :::bash 
+    :::bash
     mkdir -p /etc/uwsgi/apps-available
     mkdir -p /etc/uwsgi/apps-enabled
 
@@ -39,13 +39,13 @@ Now get the init script:
 
     chmod +x uwsgi
 
-    # Make it start automaticly
+    # Make it start automatically
     update-rc.d uwsgi defaults
 
 [Link to gist](https://gist.github.com/kradalby/3252b8bacca6622bf864)
 
 Create log directory:
-    
+
     :::bash
     mkdir /var/log/uwsgi
     chown -R nginx.nginx /var/log/uwsgi
@@ -71,7 +71,7 @@ Currently i only got Django applications running on uWSGI. Below you will find a
 
 ## Controlling uWSGI
 
-With the provided init script you can use the debian standard service command to control uWSGI:
+With the provided init script you can use the Debian standard service command to control uWSGI:
 
 Stop, start restart:
 
@@ -81,20 +81,20 @@ Stop, start restart:
     service uwsgi restart
 
 Reload:
-    
+
     :::bash
     service uwsgi reload
 
     # Or the send command directly
     uwsgi --reload /var/run/uwsgi/uwsgi.pid
 
-A neat feature uWSGI also has, is auto reload if a config file for a application is changed. So every time you change a .ini file which is linked to the apps-enabled directory it will reload that particular app.
+A neat feature uWSGI also has, is auto reload if a config file for an application is changed. So every time you change a .ini file which is linked to the apps-enabled directory it will reload that particular app.
 
 
 ## Setting up a Nginx vhost with uWSGI
-The first thing we will do is to define a upstream.
+The first thing we will do is to define an upstream.
 
-A Nginx upstream is a group of server/resources that can be referenced by the pass methods, like proxy, fastcgi or uwsgi.
+A Nginx upstream is a group of server/resources that can be referenced by the pass methods, like proxy, FastCGI or uwsgi.
 The load is distributed between the given servers using a round-robin balancing method. Parameters that can be passed can be found [here](http://nginx.org/en/docs/http/ngx_http_upstream_module.html)
 
 The upstream used with the uWSGI configuration above looks like this:
@@ -129,5 +129,3 @@ PYTHON=python2.7 ./uwsgi --build-plugin "plugins/python python27"
 PYTHON=python3.5 ./uwsgi --build-plugin "plugins/python python35"
 mv python*plugin* /usr/local/lib/uwsgi/
 mv uwsgi /usr/local/bin/
-
-
