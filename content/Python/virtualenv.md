@@ -1,4 +1,4 @@
-Title: Setting up virtualenv for Python 
+Title: Setting up virtualenv for Python
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
 Tags: python, python3, virtualenv
@@ -9,7 +9,7 @@ Summary: How to set up a virtualenv for python development and production.
 ## Install virtualenv on Debian Wheezy
 
 Install via pip:
-    
+
     :::bash
     pip install virtualenvwrapper
 
@@ -24,21 +24,21 @@ Remember to reload your shell.
 
 
 ## Creating a virtualenv
-Here is a collection of create commands that i have needed.
+Here is a collection of creating commands that I have needed.
 
 ### Standard create
-    
+
     :::bash
     mkvirtualenv name
 
 ### Python3 create
 
-    :::bash 
+    :::bash
     mkvirtualenv -p /usr/bin/python3 name
 
 ### Custom path
-    
+
     :::bash
     mkvirtualenv /path/to/env
 
-Note: This will create the env where you want it, but you will not be able to use workon og lsvirtualenv to find it.
+Note: This will create the env where you want it, but you will not be able to use workon and lsvirtualenv to find it.

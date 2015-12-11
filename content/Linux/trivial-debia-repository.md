@@ -1,14 +1,14 @@
 Title: Creating a Trivial Debian Repository
-Tags: debian, repositories, repo, repository, jessie, nginx
+Tags: Debian, repositories, repo, repository, Jessie, nginx
 Date: 2014-12-26 19:15
 Modified: 2014-12-26 19:15
 Summary: How to create a basic Trivial Debian Repository for local packages not located in any other repo
 
 [TOC]
 
-I use Xenserver on one of my server for virtualization and i run quite many Debian installations on it. For every single one, i have to install the xe-guest-utilities which by default is only available on a CD/ISO. Since the CD has a .deb package, i decided to just create a local repo on one of the server.
+I use Xenserver on one of my servers for virtualization and I run quite many Debian installations on it. For every single one, I have to install the xe-guest-utilities which by default is only available on a CD/ISO. Since the CD has a .deb package, I decided to just create a local repo on one of the servers.
 
-This is what the Debian docs call a Trivial repo, with just one binary folder, a Release file and a Packages.gz. The repo in this post will not be signed, and therefore be unauthenticated.
+This is what the Debian docs call a Trivial repo, with just one binary folder, a Release file, and a Packages.gz. The repo in this post will not be signed, and therefore, be unauthenticated.
 
 Also, a webserver is a precondition. I use Nginx.
 
@@ -28,7 +28,7 @@ The first thing we have to is to create a repo folder on the webserver and then 
     mkdir -p repo/binary
 
 ## Creating index files
-In the repository we need a index file of what it contains. We will generate this with the command dpkg-scanpackages. This command is not standard so we will need to install dpkg-dev.
+In the repository, we need an index file of what it contains. We will generate this with the command dpkg-scanpackages. This command is not standard so we will need to install dpkg-dev.
 
     :::
     apt-get install dpkg-dev
@@ -48,7 +48,7 @@ Last we need a Release file on this format:
     Label: YourCompany Debian repository
     Architecture: architecture
 
-The explaination of the different keys from the Debian docs are good so i embedded them below.
+The explanation of the different keys from the Debian docs are good so I embedded them below.
 
 **Archive**
 
@@ -68,7 +68,7 @@ Some label adequate for the packages or for your repository. Use your fantasy.
 
 **Architecture**
 
-The architecture of the packages in this directory, such as i386, sparc or source.
+The architecture of the packages in this directory, such as i386, Sparc or source.
 
 ## Adding the repository
 Add the repo to source.list like this:

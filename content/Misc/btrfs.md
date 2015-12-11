@@ -4,11 +4,11 @@ Modified: 2014-01-01 10:00
 Tags: btrfs, filesystem, storage, raid1
 Summary: General usage and setup for Btrfs
 
-I am currently running btrfs on the storage part of my home server. It has two 4TB drives in btrfs raid1. This is the commands i needed to get it working and that i use to check status and such.
+I am currently running btrfs on the storage part of my home server. It has two 4TB drives in btrfs raid1. This is the commands I needed to get it working and that I use to check status and such.
 
 ## Installation
 
-First of all, you should use the most stable kernel you can get your hands on since btrfs is under active development. I am currently running 3.15.1 on the server i got btrfs.
+First of all, you should use the most stable kernel you can get your hands on since btrfs is under active development. I am currently running 3.15.1 on the server I got btrfs.
 
 Since btrfs requires some userspace applications and they do not come with Debian we will need to install them.
 
@@ -45,7 +45,7 @@ As of today (29/06/14). There exists working raid5/6 functionality, but the reco
 
 #### fstab
 
-Since my drive will be used for saving important things like photos and mainly archiving stuff i used the recommended options for this from Arch Wiki:
+Since my drive will be used for saving important things like photos and mainly archiving stuff I used the recommended options for this from Arch Wiki:
 
     :::bash
     /dev/sdd on /storage type btrfs (rw,relatime,compress-force=zlib,nospace_cache,autodefrag)

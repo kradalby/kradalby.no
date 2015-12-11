@@ -6,7 +6,7 @@ Summary: My projects
 <div class="project padding-vertical" markdown="1">
 
 ## kradalby.no
-I created kradalby.no to have somewhere to keep the documentation i write and to have it available in a practicle manner. I use a static site generator called pelican. The stylesheet is written using less and is compiled to minified CSS when i build the site. Pelican allows me to write all the pages/posts in Markdown, which is quite pleasant.
+I created kradalby.no to have somewhere to keep the documentation I write and to have it available in a practical manner. I use a static site generator called pelican. The stylesheet is written using less and is compiled to minified CSS when I build the site. Pelican allows me to write all the pages/posts in Markdown, which is quite pleasant.
 
 </div>
 
@@ -39,7 +39,7 @@ I have together with [Thor Martin](https://github.com/thormartin91) built the df
 
 ![dfektlan POS](/img/dfektlanpos.png){: .img-responsive .img-project }
 
-Together with the dfekt LAN webpage i created a Point of sales system to use in the canteen. The site is built as a AngularJS webapp that uses the Django website as its backend through a custom made API. The system also handles our crew credit system which allows our crew members to buy items from the canteen with their RFID badge.
+Together with the dfekt LAN webpage I created a Point of sales system to use in the canteen. The site is built as an AngularJS web app that uses the Django website as its backend through a custom made API. The system also handles our crew credit system which allows our crew members to buy items from the canteen with their RFID badge.
 </div>
 
 * * *
@@ -47,9 +47,9 @@ Together with the dfekt LAN webpage i created a Point of sales system to use in 
 <div class="project padding-vertical" markdown="1">
 
 ## More projects at GitHub
-I have a lot of open repositories at [GitHub](https://github.com/kradalby) with some other projects i worked on.
+I have a lot of open repositories at [GitHub](https://github.com/kradalby) with some other projects I worked on.
 
-Here is a list of some of them: 
+Here is a list of some of them:
 
 * [Ansible plays](https://github.com/kradalby/plays)
 * [Many scripts that solves problems i have come across](https://github.com/kradalby/scripts)

@@ -1,4 +1,4 @@
-Title: Fix Windows 8 install error VirtualBox 
+Title: Fix Windows 8 install error VirtualBox
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
 Tags: windows, 8, server, 2012, virtualbox, 0x000000C4
@@ -9,7 +9,7 @@ Summary: Fix the 0x000000C4 install error when trying to install Windows 8 or Wi
 
 Fix the 0x000000C4 install error when trying to install Windows 8 or Windows Server 2012 in VirtualBox
 
-This is mainly written for Mac as that is what i use, but should work on every OS.
+This is mainly written for Mac as that is what I use, but should work on every OS.
 
 ## How to fix
 
@@ -29,4 +29,3 @@ Now to fix the error on the Windows 8 Machine:
     Vboxmanage setextradata "Windows 8 64" VBoxInternal/CPUM/CMPXCHG16B 1
 
 Now it should work :)
-

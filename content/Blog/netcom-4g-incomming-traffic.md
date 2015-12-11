@@ -1,16 +1,16 @@
-Title: Netcom 4G incomming traffic
+Title: Netcom 4G incoming traffic
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: netcom, 4g, portforward
+Tags: Netcom, 4g, port forward
 Summary: Little wrant about Netcom 4G and stupidity.
 
-At my families home and warehouse we have to use Netcoms 4G network to have a usable internet connection. We use a Huawei B593s-22 router for this.
+At my families home and warehouse we have to use Netcom's 4G network to have a usable internet connection. We use a Huawei B593s-22 router for this.
 
-With the APN information Netcom gives and the default settings for their network, all incomming traffic are blocked.
+With the APN information Netcom gives and the default settings for their network, all incoming traffic are blocked.
 
-This is very annoying as i have some servers and computers i want to connect to.
+This is very annoying as I have some servers and computers I want to connect to.
 
-Fortunately Netcom has an alternaltive address that can be used.
+Fortunately, Netcom has an alternative address that can be used.
 
 Netcom wants you to use:
     internet.netcom.no

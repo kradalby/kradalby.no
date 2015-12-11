@@ -2,11 +2,11 @@ Title: Useful SNMP notes
 Tags: snmp, snmpd, oid, oids, mib, mibs, linux, set, get
 Date: 2015-01-14 17:35
 Modified: 2015-01-14 17:35
-Summary: Useful collection of SNMP information i have used, and use frequently.
+Summary: a Useful collection of SNMP information I have used and use frequently.
 
 [TOC]
 
-SNMP is a widely used protocol with a lot of great and not so great features. This is my notes on things related to this protocol that i use frequently.
+SNMP is a widely used protocol with a lot of great and not so great features. This is my notes on things related to this protocol that I use frequently.
 
 ## Useful OIDs
 
@@ -18,19 +18,19 @@ OID value: 1.3.6.1.2.1.2.2.1.2
 
 *Interface octet in*
 
-64 bit counter for total number of received octets/bytes.
+64 bit counter for a total number of received octets/bytes.
 
 OID value: 1.3.6.1.2.1.31.1.1.1.6
 
 *Interface octet out*
 
-64 bit counter for total number of transmitted octets/bytes.
+64 bit counter for a total number of transmitted octets/bytes.
 
 OID value: 1.3.6.1.2.1.31.1.1.1.10
 
 
 ## Turn of SNMPd cache
-To turn off SNMPd cache on the Debian linux package you have to, as far as i know, do this with SNMP.
+To turn off SNMPd cache on the Debian Linux package you have to, as far as I know, do this with SNMP.
 
 First, check your current cache time:
 

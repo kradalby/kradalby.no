@@ -1,7 +1,7 @@
 Title: Setup StartCom SSL/TLS certs correctly
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: ssl, tls, certs, startcom, startssl, nginx
+Tags: SSL, tls, certs, startcom, startssl, nginx
 Summary: Notes to remember when creating a new certificate from StartCom
 
 [TOC]
@@ -13,7 +13,7 @@ The password is the one you used to create the key.
     openssl rsa -in ssl.key -out ssl.key
 
 Protect the key from everyone:
-    
+
     :::bash
     chmod 600 ssl.key
 
@@ -23,7 +23,7 @@ Create certificate from key:
     TODO
 
 Fetch the Root CA and Class 1 Intermediate Server CA certificates:
-    
+
     :::bash
     wget http://www.startssl.com/certs/ca.pem
     wget http://www.startssl.com/certs/sub.class1.server.ca.pem
@@ -32,7 +32,7 @@ Concatinate the three certificates:
 
     :::bash
     cat ssl.pem sub.class1.server.ca.pem ca.pem > ssl-unified.pem
-    
+
 ## Tell Nginx to use the Certificate
 Add these lines to the vhost file for the correct domain:
 

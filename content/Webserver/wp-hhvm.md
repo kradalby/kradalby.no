@@ -1,17 +1,17 @@
 Title: Wordpress HHVM Benchmark
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: wordpress, hhvm, apachebench, benchmark
+Tags: WordPress, hhvm, apachebench, benchmark
 Summary: Basic Wordpress HHVM Benchmark using ApacheBench
 
 [TOC]
 
 
-I have a Wordpress site running for our brewing project, and i though it would be fun to see if a very basic benchmark would show any changes between two different ways of running PHP code.
+I have a Wordpress site running for our brewing project, and I though it would be fun to see if a very basic benchmark would show any changes between two different ways of running PHP code.
 
-My current setup is Nginx and PHP-FPM and i will test against Nginx and Facebooks Hip Hop VM.
+My current setup is Nginx and PHP-FPM and I will test against Nginx and Facebooks Hip Hop VM.
 
-Since i already got the site running with PHP-FPM i will not use any time to explain how to set it up, both setup will be using pretty much standard config, not any special tweaking.
+Since I already got the site running with PHP-FPM I will not use anytime to explain how to set it up, both setups will be using pretty much standard config, not any special tweaking.
 
 First, install ab:
 
@@ -32,8 +32,8 @@ The specifications for the server is:
 I will try to run the test with this different settings on each PHP backend:
 
 Test 1
-Concurrenty (-c): 2
-Number of request (-n): 1000
+Concurrently (-c): 2
+Number of requests (-n): 1000
 
 Test 2
 Concurrenty (-c): 5
@@ -45,7 +45,7 @@ Number of request (-n): 100000
 
 ## Installing HHVM
 
-My server runs Debian 7 Wheezy and i will therefore show how to install HHVM on this system.
+My server runs Debian 7 Wheezy and I will, therefore, show how to install HHVM on this system.
 
 Add the repositories and install hhvm
 
@@ -66,7 +66,7 @@ I actually got some interesting unexpected numbers. I guess that most of them ca
 
 ### Test 1
 PHP-FPM:
-    
+
     :::bash
     Time taken for tests:   56.205 seconds
     Requests per second:    17.79 [#/sec] (mean)
@@ -75,7 +75,7 @@ PHP-FPM:
     Transfer rate:          401.71 [Kbytes/sec] received
 
 HHVM:
-    
+
     :::bash
     Time taken for tests:   11.450 seconds
     Requests per second:    87.34 [#/sec] (mean)
@@ -85,7 +85,7 @@ HHVM:
 
 ### Test 2
 PHP-FPM:
-    
+
     :::bash
     Time taken for tests:   30.708 seconds
     Requests per second:    32.56 [#/sec] (mean)
@@ -94,7 +94,7 @@ PHP-FPM:
     Transfer rate:          735.25 [Kbytes/sec] received
 
 HHVM:
-    
+
     :::bash
     Time taken for tests:   5.225 seconds
     Requests per second:    191.38 [#/sec] (mean)
@@ -104,7 +104,7 @@ HHVM:
 
 ### Test 3
 PHP-FPM:
-    
+
     :::bash
     Time taken for tests:   168.360 seconds
     Requests per second:    593.97 [#/sec] (mean)
@@ -113,7 +113,7 @@ PHP-FPM:
     Transfer rate:          960.51 [Kbytes/sec] received
 
 HHVM:
-    
+
     :::bash
     Time taken for tests:   383.876 seconds
     Requests per second:    260.50 [#/sec] (mean)
@@ -121,15 +121,12 @@ HHVM:
     Time per request:       3.839 [ms] (mean, across all concurrent requests)
     Transfer rate:          5879.34 [Kbytes/sec] received
 
-Note: When running the third test, i observed very high load during the HHVM test.
+Note: When running the third test, I observed very high load during the HHVM test.
 
 ## Conclusion
 
-I was a little supprised how much HHVM outperformed PHP-FPM at the lower concurrencies, and i was very suprised that PHP-FPM actually won the high concurrency test. I guess that this can be turned around with a little tweaking. Both installs are without anything but stock install, both can proably do better.
+I was a little supprised how much HHVM outperformed PHP-FPM at the lower concurrencies, and I was very surprised that PHP-FPM actually won the high concurrency test. I guess that this can be turned around with a little tweaking. Both installs are without anything but stock install, both can probably do better.
 
-I will also let the test site run HHVM from now on, i will not, at first, tweak anything, as i dont get any amount of hits that will need this.
+I will also let the test site run HHVM from now on, I will not, at first, tweak anything, as I don't get any amount of hits that will need this.
 
 An other interesting observation from my side is that the site actually feels snappier. This may only be in my head.
-
-
-

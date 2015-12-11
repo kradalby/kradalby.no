@@ -1,12 +1,12 @@
 Title: LAN parties
-Tags: dataparty, lan party, lan parties, computer party, computer parties, digital festival, digital festivals
+Tags: dataparty, LAN party, lan parties, computer party, computer parties, digital festival, digital festivals
 Date: 2015-06-29 17:22
-Modified: 
-Summary: A little overview of the LAN parties i know, and would like to keep track off.
+Modified:
+Summary: A little overview of the LAN parties I know, and would like to keep track off.
 
 [TOC]
 
-Since there are a lot of LAN parties around, i though i made a little list with the ones i know about and would like to keep track on.
+Since there are a lot of LAN parties around, I though I made a little list with the ones I know about and would like to keep track on.
 
 ## Norway
 

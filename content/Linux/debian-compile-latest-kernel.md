@@ -1,8 +1,8 @@
 Title: Compile latest Linux kernel for Debian
 Date: 2014-01-01 10:00
 Modified: 2014-01-01 10:00
-Tags: linux, kernel, debian, latest
-Summary: Quick collection of commands on how to compile the latest linux kernel for Debian.
+Tags: Linux, kernel, Debian, latest
+Summary: a Quick collection of commands on how to compile the latest Linux kernel for Debian.
 
 ## Install needed packages
 
@@ -11,13 +11,13 @@ Summary: Quick collection of commands on how to compile the latest linux kernel 
 
 ## Download latest Kernel source
 As of this writing, the latest source is 3.15.1
-    
+
     :::bash
     wget https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.15.1.tar.xz
     tar xvJf linux-3.15.1.tar.xz
 
 ## Start configuring
-    
+
     :::bash
     cd linux-3.15.1
 
@@ -53,4 +53,3 @@ To remove a kernel that we are not using, or that does not work just uninstall i
 
     :::bash
     apt-get remove linux-image-3.15.1-customkernel linux-headers-3.15.1-customkernel
-
