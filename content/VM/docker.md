@@ -1,7 +1,7 @@
 Title: Docker
 Tags: docker, container, ci, continuous integration, Linux, Debian
 Date: 2016-04-09 03:01
-Modified: 2016-04-09 22:49
+Modified: 2016-04-12 22:16
 Summary: How I should build docker images for Drone CI.
 
 [TOC]
@@ -31,3 +31,7 @@ Sometimes you have a lot of images with identifier <none>, delete them:
     do
     docker rmi -f $i
     done
+
+To list running docker containers:
+
+    docker ps
