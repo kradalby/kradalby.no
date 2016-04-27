@@ -1,7 +1,7 @@
 Title: Minimal Raspberry Pi Access Point
 Tags: rpi, debian, hostapd, raspberry, raspberry pi, access, access point, ap, wireless, wifi, wi-fi, linux, ralink, alfa, alfa networks
 Date: 2016-04-27 22:19
-Modified: 2016-04-27 22:34
+Modified: 2016-04-27 22:36
 Summary: My minimal setup for a Raspberry Pi access point using USB wifi.
 
 [TOC]
@@ -49,6 +49,7 @@ Example:
 Notable options:
 
 **hw_mode**: a means 5 GHz (set to g for 2.4)
+
 **channel**: 0 lets the software choose channel (recommended)
 
 In this setup, the RPi will get its IP address from DHCP, so the only configuration we need to do to the interfaces is to prepare the bridge that wlan0 will use:
