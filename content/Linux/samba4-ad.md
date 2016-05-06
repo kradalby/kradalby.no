@@ -1,7 +1,7 @@
 Title: Samba 4 AD on Debian
 Tags: samba, active directory, samba4, 4, ad
 Date: 2015-08-24 20:08
-Modified: 2015-08-24 20:08
+Modified: 2016-05-06 20:37
 Summary: How to set up a Samba 4 Active Directory on Debian Linux
 
 [TOC]
@@ -44,7 +44,7 @@ Example provision walkthrough:
 Rais the domain level to 2008_R2 for more functionality:
 
     :::
-    samba-tool domain level raise --domain-level 2008_R2 --forest-level 2008_R2 
+    samba-tool domain level raise --domain-level 2008_R2 --forest-level 2008_R2
 
 Turn off password complexity:
 
@@ -54,7 +54,7 @@ Turn off password complexity:
 Verify the level:
 
     :::
-    samba-tool domain level show 
+    samba-tool domain level show
 
 
 ## ldapsearch
@@ -73,4 +73,20 @@ Filter by group:
         -x -h localhost \
         -D "read@fap.no" \
         -W \
-        -b "dc=fap,dc=no" '(&(sAMAccountName=kradalby)(CN=vpn,CN=Users,DC=fap,DC=no))'
+        -b "dc=fap,dc=no" '(&(sAMAccountName=kradalby)(memberof=CN=www,CN=Users,DC=ad,DC=fap,DC=no))'
+
+LDAPS search without a signed certificat:
+
+Edit /etc/ldap/ldap.conf
+
+Add:
+
+    TLS_REQCERT allow
+
+Then run ldapserach with ldaps://
+
+    ldapsearch \
+        -x -W -H ldaps://slowking.fap \
+        -D "cn=read,cn=users,dc=ad,dc=fap,dc=no" \
+        -b "cn=users,dc=ad,dc=fap,dc=no" \
+        '(sAMAccountName=*)'
