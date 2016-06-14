@@ -1,7 +1,7 @@
 Title: Raspberry Pi router with FreeBSD
 Tags: rpi, raspberry, pi, raspberry pi, router, FreeBSD, BSD, free
-Date: 2000-01-1 10:00
-Modified:
+Date: 2000-01-01 10:00
+Modified: 2000-01-01 10:00
 Summary: How i installed FreeBSD on my Raspberry Pi and used it as a router
 
 [TOC]
