@@ -1,7 +1,7 @@
 Title: Active Directory notes
 Tags: Windows, ad, active, directory, active directory, directory service, ds
 Date: 2015-06-05 18:35
-Modified:
+Modified: 2015-06-05 18:35
 Summary: Notes and things I found useful when interacting with Active Directory
 
 [TOC]

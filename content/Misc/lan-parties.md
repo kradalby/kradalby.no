@@ -1,7 +1,7 @@
 Title: LAN parties
 Tags: dataparty, LAN party, lan parties, computer party, computer parties, digital festival, digital festivals
 Date: 2015-06-29 17:22
-Modified:
+Modified: 2015-06-29 17:22
 Summary: A little overview of the LAN parties I know, and would like to keep track off.
 
 [TOC]
