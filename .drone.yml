@@ -3,9 +3,9 @@ build:
     pull: true
     commands:
       - apt update
-      - apt install npm
+      - apt install npm node -y
       - pip install -r requirements.txt
-      - npm install less@2.0.0
+      - npm install -g less
       - make html
 
 notify:
