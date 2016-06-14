@@ -5,7 +5,7 @@ build:
       - apt update
       - apt install npm
       - pip install -r requirements.txt
-      - npm install less
+      - npm install less@2.0.0
       - make html
 
 notify:
