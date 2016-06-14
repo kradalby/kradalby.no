@@ -15,7 +15,7 @@ notify:
 
 deploy:
   rsync:
-    user: www
+    user: root
     host: seel.fap.no
     port: 22
     source: output/
