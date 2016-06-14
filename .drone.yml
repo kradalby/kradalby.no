@@ -2,7 +2,7 @@ build:
     image: kradalby/ci-tox:latest
     pull: true
     commands:
-      - apt-get install npm
+      - apt-get install node
       - pip install -r requirements.txt
       - npm install less
       - make html
