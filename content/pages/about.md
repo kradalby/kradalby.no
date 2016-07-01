@@ -12,7 +12,7 @@ Currently, I am enrolled at Universidad Politécnica de Madrid as an exchange st
 ## Voluenteer work
 I like doing volunteer work.
 
-During my higher education, I am active in dotKom (System development and administration committee), which is a part of the Student organization Online. In addition to dotKom, I was a part of the Excursion committee, planning the third year trip to Silicon Valley and I was a part of the committee responsible for the economy in three and a half year.
+During my higher education, I am active in dotkom (System development and administration committee), which is a part of the Student organization Online. In addition to dotkom, I was a part of the Excursion committee, planning the third year trip to Silicon Valley and I was a part of the committee responsible for the economy in three and a half year.
 
 A big part of my time is used on throwing LAN Parties. I have compiled a list of my participation of LAN parties [here](https://kradalby.no/lan-resume.html).
 
