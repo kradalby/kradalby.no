@@ -11,7 +11,6 @@ save_as: private/boxes-ips-and-services.html
 ## Terrahost
 
 Public: 185.125.169.220
-Network: 10.60.0.0/16
 Servers: 10.60.0.0/24
 VPN: 10.60.8.0/24
 
@@ -24,7 +23,6 @@ VPN: 10.60.8.0/24
 ## NTNU 1
 
 Public: 129.241.210.115
-Network: 10.60.10.0/16
 Servers: 10.60.10.0/24
 VPN: 10.60.18.0/24
 
@@ -38,7 +36,6 @@ VPN: 10.60.18.0/24
 ## NTNU 2
 
 Public: 129.241.210.106
-Network: 10.60.20.0/16
 Servers: 10.60.20.0/24
 VPN: 10.60.28.0/24
 
@@ -50,7 +47,6 @@ VPN: 10.60.28.0/24
 ## OAV
 
 Public: 84.52.231.133
-Network: 10.60.30.0/16
 Servers: 10.60.30.0/24
 VPN: 10.60.38.0/24
 
