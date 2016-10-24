@@ -1,7 +1,7 @@
 Title: Samba 4 AD on Debian
 Tags: samba, active directory, samba4, 4, ad
 Date: 2015-08-24 20:08
-Modified: 2016-05-06 20:37
+Modified: 2016-10-24 21:17
 Summary: How to set up a Samba 4 Active Directory on Debian Linux
 
 [TOC]
@@ -56,6 +56,33 @@ Verify the level:
     :::
     samba-tool domain level show
 
+
+## Multiple domain controllers
+
+It is important that all the domain controllers use the DNS server that the "main" DC updates.
+
+Add a record for the new server:
+
+    :::
+    samba-tool dns add mainDC ad.fap.no newDC A 10.60.0.11 -Uadministrator
+
+Check the record on all servers:
+
+    :::
+    drill newDC.ad.fap.no A
+
+
+Join the domain controller:
+
+    :::
+    samba-tool domain join ad.fap.no DC -U"FAP.NO\administrator" --dns-backend=SAMBA_INTERNAL
+
+Check the replication status:
+
+    :::
+    samba-tool drs showrepl
+
+If showrepl fails with "WERR_NOMEM", try restarting samba.
 
 ## ldapsearch
 
