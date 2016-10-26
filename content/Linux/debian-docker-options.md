@@ -1,10 +1,8 @@
 Title: Setting Docker options in Debian 8
 Tags: docker, debian, systemd, jessie
 Date: 2016-10-26 16:30
-Modified: 2016-10-26 16:37
+Modified: 2016-10-26 16:50
 Summary: By default, Docker with systemd does not obey /etc/default/docker, lets fix it.
-
-[TOC]
 
 When using Debian 8 and the latest official Docker installed with the official repository from docker, the systemd configuration does not obey the /etc/default/docker configuration file. This is a little bit annoying as it is a logical and convention to put arguments for the daemon there.
 
