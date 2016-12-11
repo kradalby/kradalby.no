@@ -1,7 +1,7 @@
 Title: Signatures
 Tags: Signature, email
 Date: 2016-01-01 20:47
-Modified: 2016-01-01 20:50
+Modified: 2016-12-11 20:50
 Summary: Signatures
 URL: private/signature.html
 save_as: private/signature.html
@@ -25,7 +25,7 @@ This is my email signatures.
     --
     Best regards
     Kristoffer Dalby
-    456 73 429
+    0047 456 73 429
 
 
 ### Drift
