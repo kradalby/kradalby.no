@@ -1,7 +1,7 @@
 Title: Samba 4 AD on Debian
 Tags: samba, active directory, samba4, 4, ad
 Date: 2015-08-24 20:08
-Modified: 2016-10-24 21:17
+Modified: 2017-01-29 22:44
 Summary: How to set up a Samba 4 Active Directory on Debian Linux
 
 [TOC]
@@ -117,3 +117,8 @@ Then run ldapserach with ldaps://
         -D "cn=read,cn=users,dc=ad,dc=fap,dc=no" \
         -b "cn=users,dc=ad,dc=fap,dc=no" \
         '(sAMAccountName=*)'
+
+
+Disable password expiration for user:
+
+    samba-tool user setexpiry USER --noexpiry
