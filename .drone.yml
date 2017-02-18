@@ -7,6 +7,7 @@ pipeline:
         - make html
 
   deploy:
+    image: drillster/drone-rsync
     user: www
     hosts: [ "seel.terra.fap.no" ]
     port: 22
@@ -17,7 +18,7 @@ pipeline:
     exclude:
     when:
         branch: master
-    commands:
+    script:
       - echo "Done"
 
   notify:
