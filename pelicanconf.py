@@ -62,18 +62,28 @@ GITHUB = u"kradalby"
 TWITTER = u"kradalby"
 
 
-MD_EXTENSIONS = ['toc','codehilite(css_class=highlight)', 'extra']
+MARKDOWN = ['toc','codehilite(css_class=highlight)', 'extra']
+
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.toc': {},
+    },
+    'output_format': 'html5',
+}
 
 
 # To override standard values use localconf.py!
 
 
-import os, sys
-
-if os.path.isfile("localconf.py"):
-    sys.path.append(os.path.join(os.path.dirname(__file__)))
-    try: 
-        exec("from localconf import *")
-    except ImportError, e:
-        print "Coult not import localconf: %s" % str(e)
-    
+#import os, sys
+#
+#if os.path.isfile("localconf.py"):
+#    sys.path.append(os.path.join(os.path.dirname(__file__)))
+#    try:
+#        exec("from localconf import *")
+#    except ImportError, e:
+#        print "Coult not import localconf: %s" % str(e)
+#
