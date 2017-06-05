@@ -5,7 +5,6 @@ tags = ["about"]
 date = "2014-01-01T10:00:00"
 +++
 
-## About me
 My name is Kristoffer Dalby, I was born in 1992, I am from Sandefjord and I am currently living in Madrid, Spain.
 
 ## Education
