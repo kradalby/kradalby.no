@@ -1,0 +1,65 @@
+baseurl             = "https://you.github.io/"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+language
+layoutdir           = "layouts"
+publishdir          = "public"
+theme               = "cocoa"
+author              = "Kristoffer Dalby"
+title               = "kradalby.no"
+pygmentsuseclasses  = true
+# disqusshortname     = "cocoaexamplesite" # 
+pluralizelisttitles = false
+googleAnalytics     = "UA-18856525-15"
+
+[permalinks]
+fixed = ":title/"
+blog  = "blog/:slug/"
+
+[[menu.main]]
+name                   = "Blog"
+weight                 = -120
+identifier             = "blog"
+url                    = "/blog/"
+
+[[menu.main]]
+name                   = "About"
+weight                 = -110
+identifier             = "about"
+url                    = "/about/"
+
+# [[menu.main]]
+# name                   = "
+# weight                 = -100
+# identifier             = "code"
+# url                    = "/code/"
+
+[params]
+latestpostscount       = 5                             # how many posts to display on the home page
+i18n_flags             = false                         # whether to display small country flags for available translations
+author                 = "Kristoffer Dalby"
+cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
+dateform               = "Jan 2, 2006"
+dateformfull           = "Mon Jan 2 2006 15:04:05 MS
+description            = ""
+email                  = "kradalby@kradalby.no"
+extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
+faviconfile            = "img/leaf.ico"
+github                 = "//github.com/kradalby"
+highlightjs            = true
+lang                   = "en"
+linkedin               = "//linkedin.com/in/kristoffer-dalby-61159961"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+selfintro              = ""                            # appears in the site header when set to a non-empty string
+twitter                = "//twitter.com/kradalby"
+# mastodon               = "//example.com/@you"
+# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
+# highlightjsStyle     = "darcula"
+
+piwik				   = false                         # If true, Piwik integration is enabled
+# piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
+# piwik_id			   = 2                             # Id of your site in Piwik
+
+# avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+gravatar             = "2e5d2c3dd570ae61ab8b1b41484a6fed"                # do not use in the same time as avatar
