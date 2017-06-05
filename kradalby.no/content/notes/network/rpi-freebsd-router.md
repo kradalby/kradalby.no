@@ -5,7 +5,7 @@ tags = ["rpi", "raspberry", "pi", "raspberry pi", "router", "FreeBSD", "BSD", "f
 date = "2000-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 This project is a result of an urge to relearn FreeBSD, as it is quite some time since I still used it. Also, I had spear Raspberry Pi and decided that using a laptop as a router for three people is kind of overkill.
 

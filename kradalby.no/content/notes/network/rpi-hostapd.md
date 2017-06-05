@@ -5,7 +5,7 @@ tags = ["rpi", "debian", "hostapd", "raspberry", "raspberry pi", "access", "acce
 date = "2016-04-27T22:19:00"
 +++
 
-[TOC]
+
 
 I needed an access point in my shared flat during my semester abroad in Spain as the shared routers performance dropped significantly when everyone was home. This is how I configured myself a 5 GHz access point using an old Raspberry Pi (Model B) and a Alfa Networks AWUS051NH v2. This networks card supports 5 GHz and N networking. My flat is in the middle of a big block of different apartments and networks, this is a really nice feature to have.
 

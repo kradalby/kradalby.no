@@ -5,7 +5,7 @@ tags = ["VPN", "LDAP", "OpenLDAP", "OpenVPN", "private networking", "virtual pri
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 I was on a trip in the United States for two weeks and relied heavily on free and open networks from restaurants and hotels. Therefore, before we left I took a few hours to set up an OpenVPN server.
 

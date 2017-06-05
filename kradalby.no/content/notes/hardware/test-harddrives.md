@@ -5,7 +5,7 @@ tags = ["smartctl", "badblocks", "hard drives", "hdd"]
 date = "2016-01-18T11:52:00"
 +++
 
-[TOC]
+
 
 ## Smart status
 The smart status of a hard drive contains information about the health of the drive.

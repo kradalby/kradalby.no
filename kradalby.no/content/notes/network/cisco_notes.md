@@ -5,7 +5,7 @@ tags = ["network", "networking", "cisco", "switch"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Setting IP on Vlan1 for basic management
 

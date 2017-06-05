@@ -5,7 +5,7 @@ tags = ["samba", "active directory", "samba4", "4", "ad"]
 date = "2015-08-24T20:08:00"
 +++
 
-[TOC]
+
 
 This is a quick guide/note on how to set up Samba 4 Active Directory on Debian Linux.
 

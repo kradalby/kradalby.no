@@ -5,7 +5,7 @@ tags = ["todo"]
 date = "2015-06-06T23:11:00"
 +++
 
-[TOC]
+
 
 ## DNS
 The server needs to be added to DNS, both diglett and DigitalOcean

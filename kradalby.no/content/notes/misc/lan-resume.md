@@ -5,7 +5,7 @@ tags = ["LAN", "LAN parties", "dataparty", "computer party", "computer parties"]
 date = "2015-01-01T10:22:00"
 +++
 
-[TOC]
+
 
 I have over the years attended a lot of LAN parties. And since I seem to forget some of them, I though I would make a list.
 

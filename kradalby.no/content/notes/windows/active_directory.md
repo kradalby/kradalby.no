@@ -5,7 +5,7 @@ tags = ["Windows", "ad", "active", "directory", "active directory", "directory s
 date = "2015-06-05T18:35:00"
 +++
 
-[TOC]
+
 
 ## List groups and users Active directory path
 

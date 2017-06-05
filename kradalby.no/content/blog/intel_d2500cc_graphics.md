@@ -5,7 +5,7 @@ tags = ["debian", "intel", "integrated graphics", "graphics", "intel d2500cc", "
 date = "2015-01-06T18:14:00"
 +++
 
-[TOC]
+
 
 I have a [Intel DC2500CC](http://www.intel.com/content/www/us/en/motherboards/desktop-motherboards/desktop-board-d2500cc.html) motherboard which I use as a router/firewall appliance. It has really great specs for this purpose. Unfortunately, out of the box, when finished installing Debian, it will not provide any graphics output. Heres how I solved it.
 

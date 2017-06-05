@@ -5,7 +5,7 @@ tags = ["xenserver", "xenserver tools", "tools", "centos", "linux", "vm", "virtu
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Installing Xenserver Tools on debian
 
@@ -29,7 +29,7 @@ Run install script:
     Tags: xenserver, xenserver tools, tools, centos, linux, vm, virtualization
     Summary: Xenserver notes
 
-    [TOC]
+    
 
     ## Installing XenServer Tools on Debian
 

@@ -5,7 +5,7 @@ tags = ["Hotkeys"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Mosh
 To kill a mosh session:

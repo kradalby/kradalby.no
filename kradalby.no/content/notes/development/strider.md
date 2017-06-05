@@ -5,7 +5,7 @@ tags = ["Strider", "strider", "stridercd", "cd", "continuous", "deployment", "de
 date = "2014-12-13T21:41:00"
 +++
 
-[TOC]
+
 
 I have been looking for an alternative to Jenkins for personal use for a little while and after some googling I come over Strider CD, which actually focus on both integration and deployment. It is written in Node and have a very nice interface. The reason I wanted to stay away from Jenkins is the cluttered interface and the memory hungry Java, it also has a lot of features I do not need.
 

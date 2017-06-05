@@ -5,7 +5,7 @@ tags = ["Signature", "email"]
 date = "2016-01-01T20:47:00"
 +++
 
-[TOC]
+
 
 ## Email
 This is my email signatures.

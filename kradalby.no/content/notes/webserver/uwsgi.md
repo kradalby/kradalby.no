@@ -5,7 +5,7 @@ tags = ["nginx", "uwsgi", "Django", "python", "Debian"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 
 Preconditions: Nginx is installed on the server.

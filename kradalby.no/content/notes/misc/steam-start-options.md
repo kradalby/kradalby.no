@@ -5,7 +5,7 @@ tags = ["dota", "dota2", "dota2 reborn", "cs", "css", "csgo", "cs16", "counter-s
 date = "2015-01-05T18:02:00"
 +++
 
-[TOC]
+
 
 ## Dota 2
 

@@ -5,7 +5,7 @@ tags = ["network", "networking", "DNS", "bind"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Usage
 You can do many neat things with dig. Here are a few neat things.

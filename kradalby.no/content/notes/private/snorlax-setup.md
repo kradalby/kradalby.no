@@ -5,7 +5,7 @@ tags = ["backup"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Hard drives
 

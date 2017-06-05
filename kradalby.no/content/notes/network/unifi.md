@@ -5,7 +5,7 @@ tags = ["unifi", "Debian", "Jessie", "ubiquiti"]
 date = "2014-12-25T20:48:00"
 +++
 
-[TOC]
+
 
 My parents have moved to a farm with multiple houses and a very big barn. So I got them to buy four of the Unifi APs.
 

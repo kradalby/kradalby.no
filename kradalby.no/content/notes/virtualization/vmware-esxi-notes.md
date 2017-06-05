@@ -10,7 +10,7 @@ Date: 2015-07-18 14:53
 Modified: 2015-07-18 16:52
 Summary: Notes that might come in handy when working with VMware ESXi.
 
-[TOC]
+
 
 These are my notes and experiences when working with VMware ESXi. VMwares OFVtool is also featured here as it is a crucial part to moving virtual machines between ESXi hosts.
 

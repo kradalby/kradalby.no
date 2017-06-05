@@ -5,7 +5,7 @@ tags = ["SSL", "tls", "certs", "startcom", "startssl", "nginx"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Decrypt the key
 The password is the one you used to create the key.

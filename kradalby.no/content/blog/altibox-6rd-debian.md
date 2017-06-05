@@ -5,7 +5,7 @@ tags = ["6rd", "altibox", "ipv6", "tunnel", "debian", "linux"]
 date = "2014-11-22T10:12:00"
 +++
 
-[TOC]
+
 
 Altibox lets its users setup IPv6 via 6rd until their dual stack network is finished and rolled out. In this post i will show you how to set it up on a Linux box that is directly connected to a Altibox modem that is configured in bridge mode.
 

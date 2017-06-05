@@ -5,7 +5,7 @@ tags = ["pxe", "TFTP", "tftpd", "boot", "server"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Installing TFTP
 

@@ -5,7 +5,7 @@ tags = ["linux", "debian", "jessie", "multiple isp", "isp", "internet", "multipl
 date = "2014-12-25T21:36:00"
 +++
 
-[TOC]
+
 
 This christmas, my parents got a very slow and crappy ADSL connections installed from HomeNet(who sucks) in addition to the 4G connection they already have from Netcom. Since the 4G connection has a limited amount of data, but is fast, and the ADSL has unlimited data, but a slow connection, the idea is that "low priority machines" will use the ADSL to save data and "high priority machines" can use the 4G.
 

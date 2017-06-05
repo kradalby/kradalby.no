@@ -5,7 +5,7 @@ tags = ["network", "networking", "dns", "dhcp", "bind"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Installing BIND9
 

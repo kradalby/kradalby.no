@@ -5,7 +5,7 @@ tags = ["Debian", "repositories", "repo", "repository", "Jessie", "nginx"]
 date = "2014-12-26T19:15:00"
 +++
 
-[TOC]
+
 
 I use Xenserver on one of my servers for virtualization and I run quite many Debian installations on it. For every single one, I have to install the xe-guest-utilities which by default is only available on a CD/ISO. Since the CD has a .deb package, I decided to just create a local repo on one of the servers.
 

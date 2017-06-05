@@ -5,7 +5,7 @@ tags = ["windows", "8", "server", "2012", "virtualbox", "0x000000C4"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 
 Fix the 0x000000C4 install error when trying to install Windows 8 or Windows Server 2012 in VirtualBox

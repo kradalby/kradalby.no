@@ -5,7 +5,7 @@ tags = ["socks", "proxy", "mac"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 Set the Mac OS X settings from command line:
 

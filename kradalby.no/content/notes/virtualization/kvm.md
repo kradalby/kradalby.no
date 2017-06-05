@@ -5,7 +5,7 @@ tags = ["KVM", "VM", "Virtualization", "virtual", "virtual machine", "debian", "
 date = "2015-12-18T07:29:00"
 +++
 
-[TOC]
+
 
 KVM requires that the processor has virtualization support, named VT-x for Intel, and AMD-V for AMD.
 

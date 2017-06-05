@@ -5,7 +5,7 @@ tags = ["python", "python3", "virtualenv"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Install virtualenv on Debian Wheezy
 

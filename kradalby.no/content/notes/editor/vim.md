@@ -5,7 +5,7 @@ tags = ["vim", "editor", "awesome"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Encrypt a file with Vim
 

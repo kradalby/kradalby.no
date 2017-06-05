@@ -5,7 +5,7 @@ tags = ["zfs", "zpool", "freebsd", "debian"]
 date = "2016-05-05T12:10:00"
 +++
 
-[TOC]
+
 
 Collection of commands that are useful when managing ZFS storage.
 

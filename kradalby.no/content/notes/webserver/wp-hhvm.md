@@ -5,7 +5,7 @@ tags = ["WordPress", "hhvm", "apachebench", "benchmark"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 
 I have a Wordpress site running for our brewing project, and I though it would be fun to see if a very basic benchmark would show any changes between two different ways of running PHP code.

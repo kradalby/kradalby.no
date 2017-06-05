@@ -5,7 +5,7 @@ tags = ["dhclient", "DNS", "resolv", "hook", "prevent"]
 date = "2014-12-25T20:49:00"
 +++
 
-[TOC]
+
 
 I ran into an issue where I had a server with two static IP interface and one dynamic. The setup required the system to have a specific DNS setup in resolv.conf, but the dynamic interface was overriding it every time it got a new lease.
 

@@ -5,7 +5,7 @@ tags = ["ssh", "ssh config", "config", "alias", "SCP", "mosh"]
 date = "2015-03-09T16:44:00"
 +++
 
-[TOC]
+
 
 Some years ago I decided to use the ssh user config instead of using an alias in my .zshrc file.
 

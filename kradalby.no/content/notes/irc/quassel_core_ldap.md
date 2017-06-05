@@ -5,7 +5,7 @@ tags = ["IRC", "quassel", "LDAP", "internet relay chat"]
 date = "2015-02-13T10:53:00"
 +++
 
-[TOC]
+
 
 I like IRC a lot, but for some people, the threshold is too high to join because of the need of having a "always on" client. My personal client is Weechat, but the command line clients on a server idea do not fit all.
 

@@ -5,7 +5,7 @@ tags = ["webserver wheezy Debian nginx"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 ## Add the Official Nginx repository
 

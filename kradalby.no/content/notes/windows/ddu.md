@@ -5,7 +5,7 @@ tags = ["ddu", "drivers", "graphic drivers", "Nvidia", "AMD", "intel", "display 
 date = "2015-06-17T10:11:00"
 +++
 
-[TOC]
+
 
 When I was on Dreamhack last weekend, I had to reinstall the drivers for my ATI R9 280X as Windows 10 and ATI graphics cards are not exactly stable together. I was surprised to see that the official uninstallers do not remove everything that is actually needed to properly uninstall the drivers and control panel.
 

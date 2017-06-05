@@ -5,7 +5,7 @@ tags = ["cisco", "network", "reset", "express", "crap"]
 date = "2014-01-01T10:00:00"
 +++
 
-[TOC]
+
 
 I have one Cisco Catalyst Express 500 series switch and it is quite horrible. Here are some notes on how to reset it and configure it from scratch since it is somehow hard. Cisco actually only support Windows 2k or XP as OS for resetting the switch.
 

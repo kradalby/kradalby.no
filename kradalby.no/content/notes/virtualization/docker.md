@@ -5,7 +5,7 @@ tags = ["docker", "container", "ci", "continuous integration", "Linux", "Debian"
 date = "2016-04-09T03:01:00"
 +++
 
-[TOC]
+
 
 I use Docker sometimes. Currently, I use a CI called Drone, which runs tests in Docker containers customized for the project (usually to mimic the production environment). I like this a lot as I don't get one big blob with everything installed for all the different projects dependencies. This page has the docker commands that i need to use to build and push the different images.
 
