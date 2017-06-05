@@ -1,8 +1,3 @@
-Title: PostgreSQL usage
-Date: 2014-01-01 10:00
-Modified: 2014-01-01 10:00
-Tags: database, postgres, postgresql, sql
-Summary: Basic PostgreSQL commands that i use.
 +++
 title = "PostgreSQL notes"
 description = "Notes about PostgreSQL"
