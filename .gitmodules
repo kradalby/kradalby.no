@@ -1,3 +1,3 @@
-[submodule "kradalby.no/themes/cocoa"]
-	path = kradalby.no/themes/cocoa
+[submodule "themes/cocoa"]
+	path = themes/cocoa
 	url = https://github.com/nishanths/cocoa-hugo-theme.git
