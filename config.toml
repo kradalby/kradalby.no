@@ -2,14 +2,13 @@ baseurl             = "https://you.github.io/"
 builddrafts         = false
 canonifyurls        = true
 contentdir          = "content"
-language
 layoutdir           = "layouts"
 publishdir          = "public"
 theme               = "cocoa"
 author              = "Kristoffer Dalby"
 title               = "kradalby.no"
 pygmentsuseclasses  = true
-# disqusshortname     = "cocoaexamplesite" # 
+# disqusshortname     = "cocoaexamplesite" #
 pluralizelisttitles = false
 googleAnalytics     = "UA-18856525-15"
 
@@ -41,7 +40,7 @@ i18n_flags             = false                         # whether to display smal
 author                 = "Kristoffer Dalby"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
 dateform               = "Jan 2, 2006"
-dateformfull           = "Mon Jan 2 2006 15:04:05 MS
+dateformfull           = "Mon Jan 2 2006 15:04:05 MS"
 description            = ""
 email                  = "kradalby@kradalby.no"
 extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
