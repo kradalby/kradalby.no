@@ -74,6 +74,6 @@ if os.path.isfile("localconf.py"):
     sys.path.append(os.path.join(os.path.dirname(__file__)))
     try: 
         exec("from localconf import *")
-    except ImportError, e:
-        print "Coult not import localconf: %s" % str(e)
+    except ImportError as e:
+        print("Coult not import localconf: %s" % str(e))
     
