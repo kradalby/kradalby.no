@@ -1,26 +1,9 @@
 pipeline:
   build:
-      image: python:2.7.13
-      pull: true
-      commands:
-        - pip install -r requirements.txt
-        - make html
-
-  deploy:
-    image: drillster/drone-rsync
-    user: www
-    hosts: [ "seel.terra.fap.no" ]
-    key: ${SSH_KEY}
-    port: 22
-    source: output/
-    target: /usr/local/www/kradalby.no/site/
-    delete: false
-    recursive: true
-    exclude:
-    when:
-        branch: master
-    script:
-      - echo "Done"
+    image: plugins/docker
+    repo: kradalby/kradalby.no
+    auto_tag: true
+    secrets: [ docker_username, docker_password ]
 
   notify:
     image: drillster/drone-email
