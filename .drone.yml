@@ -10,6 +10,10 @@ steps:
 - name: build
   pull: if-not-exists
   image: banzaicloud/drone-kaniko 
+
+- name: publish
+  pull: if-not-exists
+  image: banzaicloud/drone-kaniko 
   settings:
     repo: kradalby/kradalby.no
     tags:
